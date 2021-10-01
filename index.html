@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="icon" href="./assets/a-icon.png">
     <!-- Calendly badge widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -165,6 +166,16 @@
             -webkit-transform: rotate(45deg);
         }
 
+        .appops-footer-logo {
+            width: 60px;
+            cursor: pointer;
+        }
+
+        .built-with-appops {
+            right: 47px;
+            position: absolute;
+        }
+
         /** Calendly css starts */
         .calendly-badge-widget {
             position: fixed !important;
@@ -210,7 +221,7 @@
             .header {
                 padding: 12% 0% 5% 0%;
             }
-            
+
             .ark-logo {
                 height: 7vh;
             }
@@ -311,6 +322,8 @@
     <div class="checklist-container">
         <div class="checklist">
             <ul>
+                <li class="done">AI driven article extraction platform</li>
+                <br />
                 <li class="done">High performance search index</li>
                 <br />
                 <li class="done">Granular article extraction including title, author and highlights</li>
@@ -318,6 +331,11 @@
                 <li class="done">Capability to process 1million PDF pages per hour</li>
                 <br />
                 <li class="done">NewsFeed Availability</li>
+                <br />
+                <li style="list-style-type:none;">and much more ...</li>
+            </ul>
+            <ul class="built-with-appops">
+                <li style="list-style-type:none;color: black; font-weight: 100; font-size: medium;">built with <a href="https://www.appops.org/" target="_blank"><img class="appops-footer-logo" src="./assets/AppopsLogo.png"/></a></li>
             </ul>
         </div>
     </div>
