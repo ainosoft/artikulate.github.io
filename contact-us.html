@@ -94,92 +94,7 @@
             font-size: 3vh;
         }
 
-        /** Image container css */
-        .img-container {
-            margin-top: 19%;
-        }
 
-        .image1 {
-            width: 55%;
-            margin-top: 12%;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-        }
-
-        .image2 {
-            width: 55%;
-            right: 0;
-            position: absolute;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-        }
-
-        .arrow {
-            font-size: 15vh;
-            color: red;
-            top: 94%;
-            left: 42%;
-            position: absolute;
-        }
-
-        /** Image container css ends */
-
-        .checklist-container {
-            background: #e4e4e4;
-            margin-top: 5%;
-        }
-
-        .checklist {
-            padding: 5%;
-        }
-
-        .checklist li {
-            color: #3b783a;
-            font-weight: 600;
-            font-size: 2vh;
-        }
-
-        li {
-            position: relative;
-            /* necessary for positioning the :after */
-        }
-
-        li.done {
-            list-style: none;
-            /* remove normal bullet for done items */
-        }
-
-        li.done:after {
-            content: "";
-            background-color: transparent;
-
-            /* position the checkbox */
-            position: absolute;
-            left: -16px;
-            top: 0px;
-
-            /* setting the checkbox */
-            /* short arm */
-            width: 5px;
-            border-bottom: 3px solid #4D7C2A;
-            /* long arm */
-            height: 11px;
-            border-right: 3px solid #4D7C2A;
-
-            /* rotate the mirrored L to make it a checkbox */
-            transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-
-        .appops-footer-logo {
-            width: 60px;
-            cursor: pointer;
-        }
-
-        .built-with-appops {
-            right: 47px;
-            position: absolute;
-        }
 
         /** Calendly css starts */
         .calendly-badge-widget {
@@ -219,6 +134,33 @@
             top: 0px !important;
         }
 
+        .details-container {
+            margin-left: 5%;
+            margin-top: 16%;
+        }
+
+        .headings {
+            font-family: 'Comfortaa';
+            font-size: 4vh;
+        }
+
+        .points {
+            font-family: 'Comfortaa';
+            font-size: 3vh;
+            margin-left: 2%;
+        }
+
+        .main-heading {
+            padding: 3%;
+            font-size: 5vh;
+            margin-left: 2%;
+            /* text-align: center; */
+            color: #3b783a;
+            word-spacing: 3px;
+            font-family: 'Comfortaa';
+            font-weight: bold;
+        }
+
         .contact-us {
             text-align: center;
         }
@@ -250,19 +192,6 @@
                 height: 7vh;
             }
 
-            .img-container {
-                margin-top: 23%;
-            }
-
-            .arrow {
-                font-size: 500%;
-                top: 27%;
-            }
-
-            .checklist li {
-                font-weight: 600;
-                font-size: medium;
-            }
 
             .calendly-badge-widget {
                 top: 26px;
@@ -304,22 +233,6 @@
             .ark-text-div p {
                 font-size: 2vh
             }
-
-            .img-container {
-                margin-top: 23%;
-            }
-
-            .arrow {
-                font-size: 500%;
-                top: 45%;
-            }
-
-            .image2 {
-                width: 54%;
-                right: 0;
-                position: absolute;
-                box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
-            }
         }
 
         /** Responsiveness for iPad pro */
@@ -332,14 +245,9 @@
                 height: 12vh;
             }
 
-            .img-container {
-                margin-top: 23%;
-            }
+            
 
-            .arrow {
-                font-size: 500%;
-                top: 39%;
-            }
+            
         } */
 
         */
@@ -358,7 +266,7 @@
 </head>
 
 <body>
-    <h3 class="header">AI driven article extraction platform</h3>
+    <h3 class="header">Exciting Franchise Possibilities</h3>
     <div class="artikulate-logo-bar">
         <div class="ark-logo">
             <div class="ark-logo-text">artikulate.io</div>
@@ -372,34 +280,34 @@
         </div>
     </div>
 
-    <div class="img-container">
-        <img class="image2" src="./assets/ArtikulateWebsiteImage2.png" />
-        <img class="image1" src="./assets/ArtikulateWebsiteImage.png" />
-        <span class="arrow">&#10150;</span>
+    <div class="details-container">
+        <p class="headings">artikulate.io gives you:</p>
+        <p class="headings">Detailed article attributes support</p>
+        <li class="points">Title, subtitle, category, highlights, author, content, page continuation</li>
+        <p class="headings">Use of machine learning for:</p>
+        <li class="points">accurate word identification and extraction</li>
+        <li class="points">content sequencing</li>
+        <li class="points">Image + caption identification</li>
+        <li class="points">Highlights and content type identification</li>
+        <li class="points">Detecting adverts, statistics, classifieds and many more formats</li>
+        <li class="points">High accuracy of over 99 percent</li>
+
+        <p class="headings">Suitable for press release, media monitoring requirements</p>
+        <p class="main-heading">Already deployed in select European countries</p>
+        <!-- <img class="image" src="./assets/details.png" /> -->
+
     </div>
-    <br>
     <div class="contact-us">
-        <a class="contact-heading" href="./contact-us.html">Contact us for a franchise opportunity</a>
+        <!-- <a class="contact-heading" href="">Contact us ...</a> -->
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScVYH24KVxvD_k5XdP6sanehBDj1AL_umU7M69ZS53QDyapJw/viewform?embedded=true"
+            width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
     <div class="checklist-container">
         <div class="checklist">
-            <ul>
-                <li class="done">AI driven article extraction platform</li>
-                <br />
-                <li class="done">High performance search index</li>
-                <br />
-                <li class="done">Granular article extraction including title, author and highlights</li>
-                <br />
-                <li class="done">Capability to process 1million PDF pages per hour</li>
-                <br />
-                <li class="done">NewsFeed Availability</li>
-                <br />
-                <li style="list-style-type:none;">and much more ...</li>
-            </ul>
+
             <ul class="built-with-appops">
-                <li style="list-style-type:none;color: black; font-weight: 100; font-size: medium;">built with <a
-                        href="https://www.appops.org/" target="_blank"><img class="appops-footer-logo"
-                            src="./assets/AppopsLogo.png" /></a></li>
+                <li style="list-style-type:none;color: black; font-weight: 100; font-size: medium;"> </li>
             </ul>
         </div>
     </div>
