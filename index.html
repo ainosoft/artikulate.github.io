@@ -2,24 +2,23 @@
 <html>
 
 <head>
-
-
     <style>
         /* html, */
+        
         html {
             font-size: 16px;
         }
-
+        
         body {
             height: 100%;
         }
-
+        
         body {
             margin: 0;
             font-family: sans-serif, "Roboto", "Helvetica Neue";
         }
-
         /** AI driver header bar */
+        
         .header {
             padding: 3%;
             font-size: 5vh;
@@ -27,121 +26,146 @@
             color: #3b783a;
             word-spacing: 3px;
         }
-
         /** Artikulate.io header bar */
+        
         .artikulate-logo-bar {
             width: 100%;
         }
-
+        
         .main-menu {
             position: fixed;
             box-sizing: border-box;
-            background-color: #edfdfd;
+            /* background-color: #edfdfd; */
+            background-color: rgba(255, 255, 255, 0.5);
             width: 100%;
+            margin-top: 0%;
         }
-
-        .main-menu a:hover {
-            background: #ddd;
-            color: black;
+        
+        .main-menu:hover {
+            background-color: white;
         }
-
+        
         .max-width-container {
             width: 100%;
-            max-width: 1920px;
+            /* max-width: 1920px; */
             margin-left: auto;
             margin-right: auto;
             box-sizing: border-box;
         }
-
+        
         .grid-row {
             display: grid;
             box-sizing: border-box;
         }
-
+        
         .grid-column {
             grid-column-start: 3;
-            grid-column-end: 46;
+            grid-column-end: 40;
             box-sizing: border-box;
         }
-
+        
         .top-menu {
             display: flex;
             padding: 1em;
         }
-
+        
         .top-left {
             display: flex;
             font-size: 4vh;
         }
-
+        
         .top-right {
             display: flex;
-            margin-left: 130vh;
+            margin-left: 129vh;
             font-size: 3vh;
         }
-
+        
         .about {
             margin-right: 2rem;
         }
-
+        
         .text-with-image {
             padding: 6rem 0;
             background-color: rgb(212, 242, 255);
         }
-
+        
         .image {
             box-sizing: border-box;
         }
-
+        
         .image1 {
             box-sizing: border-box;
             display: block;
-            overflow: hidden;
-            width: 75%;
+            /* overflow: hidden; */
+            width: 55%;
+            position: absolute;
         }
-
+        
         .grid-row.jsx-1012712551 {
             box-sizing: border-box;
-            grid-template-columns: minmax(0, 1fr) repeat(15, 70px minmax(0, 1fr));
-
-            /* grid-template-columns: minmax(0, 1fr) repeat(17, 70 minmax(0, 1fr))!important; */
+            /* grid-template-columns: minmax(0, 1fr) repeat(20, 30px minmax(0, 1fr)); */
+            grid-template-columns: minmax(0, 1fr) repeat(23, 8px minmax(0, 1fr));
         }
-
+        
         .grid-col.jsx-4017036802 {
             display: block;
             grid-column-start: 5;
-            grid-column-end: 15;
+            /* grid-column-end: 15; */
+            grid-column-end: 18;
         }
-
+        
         .grid-col.jsx-4287409794 {
             display: block;
-            grid-column-start: 15;
-            grid-column-end: 50;
+            grid-column-start: 18;
+            grid-column-end: 40;
         }
-
+        
         .large-title {
             text-align: center;
+            color: #397739;
         }
-
+        
         .text-item {
             font-size: 18px;
             line-height: 31px;
             font-weight: 200;
             /* margin-left:10%; */
         }
-
+        
         .button1 {
-            padding: 10px 20px;
+            padding: 13px 20px;
             background: #28bbbb;
             color: #ffffff;
             -webkit-text-decoration: none;
             text-decoration: none;
+            border-radius: 17px;
         }
-
+        
         .button1:hover {
             opacity: 0.7;
         }
-
+        
+        .about,
+        .contact {
+            color: black;
+        }
+        
+        .artikulate {
+            color: #397739;
+        }
+        
+        .about:hover {
+            color: #28bbbb;
+        }
+        
+        .contact:hover {
+            color: #28bbbb;
+        }
+        
+        .artikulate:hover {
+            color: #28bbbb;
+        }
+        
         .wave.jsx-3139640059 {
             position: absolute;
             /* height: 100px;
@@ -151,40 +175,38 @@
             z-index: 0;
             background-color: red;
         }
-
         /* // */
+        
         .image2 {
             box-sizing: border-box;
             display: block;
             overflow: hidden;
             width: 100%;
         }
-
+        
         .grid-row.jsx-1012712552 {
             box-sizing: border-box;
             grid-template-columns: minmax(0, 1fr) repeat(15, 70px minmax(0, 1fr));
-
             /* grid-template-columns: minmax(0, 1fr) repeat(17, 70 minmax(0, 1fr))!important; */
         }
-
+        
         .grid-col.jsx-4017036803 {
             display: block;
             grid-column-start: 3;
             grid-column-end: 15;
         }
-
+        
         .grid-col.jsx-4287409795 {
             display: block;
             grid-column-start: 15;
             grid-column-end: 30;
         }
-
+        
         .text-with-image1 {
             padding: 5rem 0;
             /* background-color: rgb(245, 247, 248); */
-
         }
-
+        
         .text {
             box-sizing: border-box;
             text-align: center;
@@ -192,66 +214,74 @@
             /* background-color: #f2f2f2; */
             background-color: #d4f2ff;
         }
-
         /* page 2 */
+        
         .text-with-image2 {
             padding: 6rem 0;
             /* background-color: rgb(212, 242, 255); */
         }
-
+        
         .text-with-image3 {
             padding: 6rem 0;
-            
         }
-
-        .text-item3{
-            padding-top:10%;
-            padding-left:10%;
-            padding-right:10%;
+        
+        .text-item3 {
+            padding-top: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
         }
+        
+        .image3 {
+            box-sizing: border-box;
+            display: block;
+            overflow: hidden;
+            width: 100%;
+        }
+        
         .text1 {
             box-sizing: border-box;
             padding: 2%;
-            padding-left:35%;
-            background-color:  #d4f2ff;
+            padding-left: 32%;
+            background-color: #d4f2ff;
         }
-
+        
         .grid-row.jsx-1012712553 {
             box-sizing: border-box;
             grid-template-columns: minmax(0, 1fr) repeat(15, 70px minmax(0, 1fr));
-
             /* grid-template-columns: minmax(0, 1fr) repeat(17, 70 minmax(0, 1fr))!important; */
         }
-
+        
         .grid-col.jsx-4017036804 {
             display: block;
             grid-column-start: 3;
             grid-column-end: 15;
         }
-
+        
         .grid-col.jsx-4287409796 {
             display: block;
             grid-column-start: 17;
             grid-column-end: 30;
         }
-
         /* footer css */
+        
         .footer {
             position: relative;
             left: 0;
             bottom: 0;
             width: 100%;
             height: 210px;
-            background-color: rgb(65, 177, 162);
+            /* background-color: rgb(65, 177, 162); */
+            background-color: rgb(70 136 127);
+            /* background-color: #669566;  according to pdf */
             color: white;
             text-align: center;
         }
-
+        
         .footer-content {
             box-sizing: border-box;
         }
-
         /* icons css */
+        
         .fa {
             padding: 20px;
             font-size: 30px;
@@ -261,34 +291,34 @@
             margin: 5px 2px;
             border-radius: 50%;
         }
-
+        
         .fa:hover {
             opacity: 0.7;
         }
-
+        
         .fa-facebook {
             background: #3B5998;
             color: white;
             margin-left: 10em;
         }
-
+        
         .fa-linkedin {
             background: #007bb5;
             color: white;
         }
-
+        
         .fa-twitter {
             background: #55ACEE;
             color: white;
         }
-
+        
         .icons {
             display: inline-block;
             /* margin-left:81em; */
-            margin-left: 20em;
+            margin-left: 6em;
         }
-
-        .image3 {
+        
+        .logo {
             height: 20%;
             width: 20%;
         }
@@ -305,11 +335,11 @@
                 <div class="grid-column">
                     <div class="top-menu">
                         <div class="top-left">
-                            <a class="about" href="#home"> artikulate.io</a>
+                            <a style="text-decoration:none" class="artikulate"> artikulate.io</a>
                         </div>
                         <div class="top-right">
-                            <a class="about" href="#home">About</a>
-                            <a class="about" href="#home">Contact us</a>
+                            <a style="text-decoration:none" class="about" href="./about.html">About</a>
+                            <a style="text-decoration:none" class="contact" href="">Contact us</a>
                         </div>
                     </div>
                 </div>
@@ -323,28 +353,11 @@
             <div class="jsx-4017036802 grid-col ">
 
                 <p class="text-item">
-                    Welcome to Artikulate - an AI driven article
-                    extraction platform deployed to fetch, convert,
-                    sort and display newspaper articles from
-                    various online sources in a well-formatted,
-                    tabulated and searchable format.
-                    <br><br>
-
-                    Using Machine learning algorithms trained on
-                    various online print formats, artikulate can
-                    extract articles with 99.99 percent accuracy at
-                    the rate of a million pages per hour with zero
-                    downtime
-                    <br><br>
-
-                    Artikulate has an in-built failure and retrial
-                    mechanism ensuring availability of your news
-                    articles with minimum human intervention. and
-                    supports manual upload of PDFs, ensuring all
-                    your business needs are met.
+                    Welcome to Artikulate - an AI driven article extraction platform deployed to fetch, convert, sort and display newspaper articles from various online sources in a well-formatted, tabulated and searchable format.
+                    <br><br> Using Machine learning algorithms trained on various online print formats, artikulate can extract articles with 99.99 percent accuracy at the rate of a million pages per hour with zero downtime
+                    <br><br> Artikulate has an in-built failure and retrial mechanism ensuring availability of your news articles with minimum human intervention. and supports manual upload of PDFs, ensuring all your business needs are met.
                 </p><br>
-                <span class="button1"
-                    onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVYH24KVxvD_k5XdP6sanehBDj1AL_umU7M69ZS53QDyapJw/viewform?embedded=true'">Request
+                <span class="button1" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVYH24KVxvD_k5XdP6sanehBDj1AL_umU7M69ZS53QDyapJw/viewform?embedded=true'">Request
                     Franchise</span>
             </div>
             <div class="jsx-4287409794 grid-col">
@@ -371,28 +384,18 @@
             </div>
             <div class="jsx-4287409795 grid-col">
                 <p class="text-item1">
-                    A simple and intuitive UI, backed by a high
-                    performing search, lets you access the most
-                    relevant content by keywords.
-                    <br><br>
-
-                    The dashboard functionality will keep you and
-                    your teams updated with the with the latest
-                    stats of publications and edition currently
-                    processed along with a historical view till date.
+                    A simple and intuitive UI, backed by a high performing search, lets you access the most relevant content by keywords.
+                    <br><br> The dashboard functionality will keep you and your teams updated with the with the latest stats of publications and edition currently processed along with a historical view till date.
                 </p><br>
-                <span class="button1"
-                    onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVYH24KVxvD_k5XdP6sanehBDj1AL_umU7M69ZS53QDyapJw/viewform?embedded=true'">Request
+                <span class="button1" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVYH24KVxvD_k5XdP6sanehBDj1AL_umU7M69ZS53QDyapJw/viewform?embedded=true'">Request
                     Franchise</span>
             </div>
         </div>
     </div>
 
     <div class="text">
-        <p>We have invested in and developed proprietary AI technology to capture content from
-            global news sources. We harness the power to process over a million pages per hour
-            coupled with state-of-the-art storage and retrieval mechanisms that present the most
-            relevant information to you as and when it is published.</p>
+        <p>We have invested in and developed proprietary AI technology to capture content from global news sources. We harness the power to process over a million pages per hour coupled with state-of-the-art storage and retrieval mechanisms that present
+            the most relevant information to you as and when it is published.</p>
     </div>
 
 
@@ -402,22 +405,11 @@
             <div class="jsx-4017036802 grid-col ">
 
                 <p class="text-item">
-                    In today’s world, companies that are
-                    operating in different regions often face
-                    the challenge that the printed news is not
-                    available on a centralized platform.
-                    <br><br>
-                    If you’re not monitoring the news and
-                    tracking the sentiment of your industry, you
-                    might miss out on important information.
-                    <br><br>
-                    Using artikulate, you can present the most
-                    relevant information to your clients thereby
-                    keeping them abreast with the latest news
-                    about their industry.
+                    In today’s world, companies that are operating in different regions often face the challenge that the printed news is not available on a centralized platform.
+                    <br><br> If you’re not monitoring the news and tracking the sentiment of your industry, you might miss out on important information.
+                    <br><br> Using artikulate, you can present the most relevant information to your clients thereby keeping them abreast with the latest news about their industry.
                 </p><br>
-                <span class="button1"
-                    onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVYH24KVxvD_k5XdP6sanehBDj1AL_umU7M69ZS53QDyapJw/viewform?embedded=true'">Request
+                <span class="button1" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVYH24KVxvD_k5XdP6sanehBDj1AL_umU7M69ZS53QDyapJw/viewform?embedded=true'">Request
                     Franchise</span>
             </div>
             <div class="jsx-4287409794 grid-col">
@@ -430,9 +422,9 @@
 
     <div class="text1">
         With artikulate you have the power to:
-            <li>Be informed of news articles matching your keywords - the minute they break</li>
-            <li>Understand how you or your clients are being perceived on the global stage</li>
-            <li> Create alerts on your keyword(s) of interest</li>
+        <li>Be informed of news articles matching your keywords - the minute they break</li>
+        <li>Understand how you or your clients are being perceived on the global stage</li>
+        <li> Create alerts on your keyword(s) of interest</li>
     </div>
 
 
@@ -441,24 +433,15 @@
         <div class="jsx-1012712553 grid-row ">
             <div class="jsx-4017036804 grid-col ">
                 <div class="jsx-3814652595 image">
-                    <img class="image2" src="./assets/Data - artikulate image 4-01.png" />
+                    <img class="image3" src="./assets/Data - artikulate image 4-01.png" />
                 </div>
             </div>
             <div class="jsx-4287409796 grid-col">
                 <p class="text-item1">
-                    Even experts in your field cannot keep
-                    track of everything that’s happening all the
-                    time. Our minds simply cannot consume,
-                    sort and retrieve large volumes of
-                    information, to identify trends.
-                    <br><br>
-                    Artikulate can help media monitoring and
-                    PR professionals identify and grasp the
-                    emerging market trends before they go
-                    mainstream.
+                    Even experts in your field cannot keep track of everything that’s happening all the time. Our minds simply cannot consume, sort and retrieve large volumes of information, to identify trends.
+                    <br><br> Artikulate can help media monitoring and PR professionals identify and grasp the emerging market trends before they go mainstream.
                 </p><br>
-                <span class="button1"
-                    onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVYH24KVxvD_k5XdP6sanehBDj1AL_umU7M69ZS53QDyapJw/viewform?embedded=true'">Request
+                <span class="button1" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVYH24KVxvD_k5XdP6sanehBDj1AL_umU7M69ZS53QDyapJw/viewform?embedded=true'">Request
                     Franchise</span>
             </div>
         </div>
@@ -467,17 +450,17 @@
 
     <!-- footer -->
     <div class="footer">
-        <h2 style="margin-left: 57em; padding-top: 1em;">Connect</h2>
+        <h2 style="margin-left: 38em; padding-top: 1em;">Connect</h2>
         <div class="footer-content">
-            <h1 style=" display: inline-block;margin-left: 35%;"> Get a Franchise</h1>
+            <h1 style=" display: inline-block;margin-left: 33%;"> Get a Franchise</h1>
             <div class="icons">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-linkedin"></a>
                 <a href="#" class="fa fa-twitter"></a>
             </div>
         </div>
-        <div style="margin-top: 0em; margin-left: 76%;">
-            <h2 style="display: inline-block;">Built on</h2> &nbsp;<img class="image3" src="./assets/AppopsLogo.png">
+        <div style="margin-top: 0em; margin-left: 73%;">
+            <h2 style="display: inline-block;">Built on</h2> &nbsp;<img class="logo" src="./assets/AppopsLogo.png">
         </div>
     </div>
 </body>
