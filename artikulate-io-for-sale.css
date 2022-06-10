@@ -1,0 +1,844 @@
+ html {
+     font-size: 1vw;
+ }
+
+ body {
+     margin     : 0;
+     font-family: 'Comfortaa';
+     height     : 100%;
+ }
+
+ .top-left {
+     position        : fixed;
+     z-index         : 1;
+     box-sizing      : border-box;
+     background-color: rgba(255, 255, 255, 0.5);
+     margin-top      : 0%;
+     display         : flex;
+     font-size       : 4vh;
+     padding-top     : 0.5em;
+     padding-bottom  : 0.5em;
+     width           : 100vw;
+     justify-content : space-between;
+ }
+
+ .top-left:hover {
+     background-color: white;
+ }
+
+ .top-left .icon {
+     display: none;
+ }
+
+ .about {
+     margin-right   : 2rem;
+     margin-left    : -7%;
+     /* margin-left : 70%; */
+ }
+
+
+
+
+ /* ---- */
+
+ .text-with-image {
+     padding         : 6rem 0;
+     background-color: rgb(212, 242, 255);
+ }
+
+ .paragraph {
+     display       : flex;
+     padding       : 2%;
+     padding-bottom: 0%;
+ }
+
+ .contact-btn {
+     padding                : 1%;
+     margin-left            : 84%;
+     background             : #28bbbb;
+     color                  : #ffffff;
+     -webkit-text-decoration: none;
+     text-decoration        : none;
+     border-radius          : 17px;
+     font-weight            : bold;
+     font-size              : 1.5em;
+     cursor                 : pointer;
+ }
+
+ .large-title {
+     text-align: center;
+     color     : #397739;
+ }
+
+ .text-item {
+     line-height: 31px;
+     font-weight: 200;
+ }
+
+
+
+ /* --- */
+
+ .about,
+ .contact {
+     color    : black;
+     font-size: 3vh;
+     cursor   : pointer;
+ }
+
+ .artikulate {
+     color      : #397739;
+     margin-left: 1%;
+     cursor     : pointer;
+ }
+
+ .about:hover {
+     color: #28bbbb;
+ }
+
+ .contact:hover {
+     color: #28bbbb;
+ }
+
+ .artikulate:hover {
+     color: #28bbbb;
+ }
+
+ .wave.jsx-3139640059 {
+     position        : absolute;
+     z-index         : 0;
+     background-color: red;
+ }
+
+ /* --- */
+
+ /* grid1 */
+
+ .text-with-image1 {
+     padding: 3rem 0;
+ }
+
+ .grid1-row {
+     box-sizing           : border-box;
+     display              : grid;
+     grid-template-columns: minmax(0, 1fr) repeat(15, 70px minmax(0, 1fr));
+ }
+
+ .left-grid1-col {
+     display          : block;
+     grid-column-start: 3;
+     grid-column-end  : 15;
+ }
+
+ .left-grid1-image {
+     box-sizing: border-box;
+     display   : block;
+     overflow  : hidden;
+     width     : 100%;
+ }
+
+ .right-grid1-col {
+     display          : block;
+     grid-column-start: 15;
+     grid-column-end  : 30;
+ }
+
+ .text-item1 {
+     line-height: 31px;
+ }
+
+ .button1 {
+     padding                : 13px 20px;
+     background             : #28bbbb;
+     color                  : #ffffff;
+     -webkit-text-decoration: none;
+     text-decoration        : none;
+     border-radius          : 17px;
+     font-weight            : bold;
+     cursor                 : pointer;
+ }
+
+ .span {
+     height  : 150px;
+     overflow: hidden;
+ }
+
+ .svg {
+     height: 100%;
+     width : 100%;
+ }
+
+ .path {
+     stroke: none;
+     fill  : rgb(212, 242, 255);
+ }
+
+ .icon {
+     float          : right;
+     font-size      : 37px;
+     padding-top    : 1%;
+     color          : black;
+     text-decoration: none;
+     font-weight    : bold;
+ }
+
+ .text1 {
+     box-sizing      : border-box;
+     text-align      : center;
+     padding         : 2%;
+     background-color: #d4f2ff;
+     line-height     : 1.5em;
+ }
+
+
+
+
+ /* --grid2- */
+
+ .text-with-image2 {
+     padding: 3rem 0;
+ }
+
+ .grid2-row {
+     box-sizing           : border-box;
+     display              : grid;
+     grid-template-columns: minmax(0, 1fr) repeat(23, 8px minmax(0, 1fr));
+ }
+
+ .left-grid2-col {
+     display          : block;
+     grid-column-start: 5;
+     grid-column-end  : 18;
+ }
+
+ .right-grid2-col {
+     display          : block;
+     grid-column-start: 18;
+     grid-column-end  : 40;
+ }
+
+ .text-item2 {
+     line-height: 31px;
+     font-weight: 200;
+ }
+
+ .right-grid2-image {
+     box-sizing : border-box;
+     display    : block;
+     width      : 53%;
+     position   : absolute;
+     margin-top : -2%;
+     margin-left: 1%;
+ }
+
+
+ .button2 {
+     margin-top             : 28em;
+     margin-left            : -12em;
+     margin-bottom          : 0em;
+     padding                : 13px 20px;
+     background             : #28bbbb;
+     color                  : #ffffff;
+     -webkit-text-decoration: none;
+     text-decoration        : none;
+     border-radius          : 17px;
+     font-weight            : bold;
+     cursor                 : pointer;
+ }
+
+ .text2 {
+     box-sizing      : border-box;
+     padding         : 2%;
+     padding-left    : 30%;
+     background-color: #d4f2ff;
+     line-height     : 24px;
+ }
+
+
+
+ /* --grid3-- */
+
+ .text-with-image3 {
+     padding: 3rem 0;
+ }
+
+ .grid3-row {
+     display              : grid;
+     box-sizing           : border-box;
+     grid-template-columns: minmax(0, 1fr) repeat(15, 70px minmax(0, 1fr));
+ }
+
+ .left-grid3-col {
+     display          : block;
+     grid-column-start: 3;
+     grid-column-end  : 15;
+ }
+
+ .left-grid3-image {
+     box-sizing: border-box;
+     display   : block;
+     overflow  : hidden;
+     width     : 100%;
+ }
+
+ .right-grid1-col {
+     display          : block;
+     grid-column-start: 17;
+     grid-column-end  : 30;
+ }
+
+ .text-item3 {
+     line-height: 31px;
+ }
+
+ .button3 {
+     padding                : 13px 20px;
+     background             : #28bbbb;
+     color                  : #ffffff;
+     -webkit-text-decoration: none;
+     text-decoration        : none;
+     border-radius          : 17px;
+     font-weight            : bold;
+     cursor                 : pointer;
+ }
+
+
+ /* -footer-- */
+
+ .footer {
+     position        : relative;
+     width           : 99vw;
+     height          : 19.2vh;
+     background-color: rgb(70 136 127);
+     color           : white;
+     text-align      : center;
+ }
+
+ .footer-content {
+     box-sizing: border-box;
+     display   : grid;
+ }
+
+ .footer-column {
+     display          : flex;
+     grid-column-start: 29;
+     grid-column-end  : 15;
+ }
+
+ /* footer icons css */
+ .fa {
+     padding        : 6%;
+     height         : 2vh;
+     width          : 5vw;
+     text-align     : center;
+     text-decoration: none;
+     margin         : 6px 2px;
+     border-radius  : 67%;
+ }
+
+ .fa:hover {
+     opacity: 0.7;
+ }
+
+ .fa-facebook {
+     background : #3B5998;
+     color      : white;
+     margin-left: 10em;
+ }
+
+ .fa-linkedin {
+     background: #007bb5;
+     color     : white;
+ }
+
+ .fa-twitter {
+     background: #55ACEE;
+     color     : white;
+ }
+
+ .icons {
+     display    : flex;
+     margin-left: 16em;
+ }
+
+ .logo {
+     height: 2vh;
+     width : 5vw;
+ }
+
+ .franchise {
+     display    : inline-block;
+     margin-left: 24%;
+     cursor     : pointer;
+ }
+
+ .appops-logo h2 {
+     margin-bottom: 0%;
+ }
+
+ .appops-logo {
+     margin-top : -1%;
+     margin-left: 82%;
+     height     : 5vh;
+ }
+
+ .connect {
+     margin-left  : 80%;
+     padding-top  : 0.5em;
+     margin-bottom: 0.5%;
+ }
+
+ /* -- */
+
+ /* Responsiveness for mobile*/
+ @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+     html {
+         font-size: 1.3vw;
+     }
+
+     .container {
+         width: 100%;
+     }
+
+     .top-left .about {
+         display: none;
+     }
+
+     .top-left .contact {
+         display: none;
+     }
+
+     .top-left a.icon {
+         float  : right;
+         display: block;
+     }
+
+     .top-left.responsive {
+         position: fixed;
+     }
+
+     .top-left.responsive .icon {
+         position: absolute;
+         right   : 2%;
+         top     : 14%;
+     }
+
+     .top-left.responsive a {
+         float     : none;
+         display   : block;
+         text-align: left;
+     }
+
+     .top-left.responsive {
+         display   : block;
+         width     : 100%;
+         text-align: left;
+     }
+
+     .icon {
+         font-size  : 37px;
+         padding-top: 1%;
+     }
+
+     .top-left a.icon {
+         justify-content: space-between;
+         margin-right   : 5%;
+         margin-top     : 2%;
+     }
+
+     .top-left:hover {
+         color: white;
+     }
+
+     .about {
+         margin-left: 2%;
+         line-height: 190%;
+         font-size  : 2.5vh;
+     }
+
+     .contact {
+         margin-left: 2%;
+         font-size  : 2.5vh;
+     }
+
+     /* grid */
+
+     .text-with-image {
+         padding       : 19rem 0;
+         padding-bottom: 7rem;
+     }
+
+     .contact-btn {
+         justify-content: center;
+         display        : flex;
+         height         : 2vh;
+         width          : 31vw;
+         font-size      : 2.8em;
+         margin-top     : 5%;
+         margin-left    : 35%;
+         padding-bottom : 2%;
+     }
+
+     /* grid1 */
+     .text-with-image1 {
+         padding-bottom: 7rem;
+     }
+
+     /* grid2 */
+     .text-with-image2 {
+         padding: 5rem;
+     }
+
+     .button2 {
+         height     : 2vh;
+         width      : 22vw;
+         margin-top : 22vh;
+         margin-left: -13vw;
+         font-size  : 1.7em;
+
+     }
+
+     .text2 {
+         padding-left: 8%;
+     }
+
+     /* grid3 */
+     .text-with-image3 {
+         padding: 6rem 0;
+     }
+
+     /* footer */
+     .footer {
+         height: 12.2vh;
+
+     }
+
+     .connect {
+         margin-bottom: 1.5%;
+     }
+
+     .footer-column {
+         grid-column-end: 4;
+     }
+
+     .appops-logo {
+         height: 3vh;
+     }
+
+     .logo {
+         height: 1vh;
+         width : 7vw;
+     }
+
+     .franchise {
+         margin-left: 32%;
+     }
+
+     .icons {
+         margin-left: 10em;
+     }
+ }
+
+
+ /** Responsiveness for iPad portrait*/
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+     html {
+         font-size: 1.4vw;
+     }
+
+     .container {
+         width: 100%;
+     }
+
+     .top-left .about {
+         display: none;
+     }
+
+     .top-left .contact {
+         display: none;
+     }
+
+     .top-left a.icon {
+         float  : right;
+         display: block;
+     }
+
+     .top-left.responsive {
+         position: fixed;
+     }
+
+     .top-left.responsive .icon {
+         position: absolute;
+         right   : 2%;
+         top     : 14%;
+     }
+
+     .top-left.responsive a {
+         float     : none;
+         display   : block;
+         text-align: left;
+     }
+
+     .top-left.responsive {
+         display   : block;
+         width     : 100%;
+         text-align: left;
+     }
+
+     .icon {
+         font-size  : 37px;
+         padding-top: 1%;
+     }
+
+     .top-left a.icon {
+         justify-content: space-between;
+         margin-right   : 5%;
+         margin-top     : -1%;
+     }
+
+     .top-left:hover {
+         color: white;
+     }
+
+     .about {
+         margin-left: 2%;
+         line-height: 190%;
+         font-size  : 2.5vh;
+     }
+
+     .contact {
+         margin-left: 2%;
+         font-size  : 2.5vh;
+     }
+
+     /* grid */
+
+     .text-with-image {
+         padding       : 11rem 0;
+         padding-bottom: 7rem;
+     }
+
+     .contact-btn {
+         justify-content: center;
+         display        : flex;
+         height         : 2vh;
+         width          : 27vw;
+         font-size      : 2.3em;
+         margin-top     : 5%;
+         margin-left    : 35%;
+         padding-bottom : 2%;
+     }
+
+     /* grid1 */
+     .text-with-image1 {
+         padding-bottom: 7rem;
+     }
+
+     /* grid2 */
+     .text-with-image2 {
+         padding: 5rem;
+     }
+
+     .button2 {
+         height     : 2vh;
+         width      : 18vw;
+         margin-top : 31vh;
+         margin-left: -11vw;
+         font-size  : 1.3em;
+         padding    : 12px 16px;
+
+     }
+
+     .text2 {
+         padding-left: 17%;
+     }
+
+     /* grid3 */
+     .text-with-image3 {
+         padding: 6rem 0;
+     }
+
+     /* footer */
+     .footer {
+         height: 16vh;
+
+     }
+
+     .connect {
+         margin-bottom: 1.5%;
+     }
+
+     .footer-column {
+         grid-column-end: 4;
+     }
+
+     .appops-logo {
+         height    : 3vh;
+         margin-top: -2%;
+     }
+
+     .logo {
+         height: 1vh;
+         width : 7vw;
+     }
+
+     .franchise {
+         margin-left: 31%;
+     }
+
+     .icons {
+         margin-left: 8em;
+     }
+ }
+
+
+ /** Responsiveness for iPad landscape*/
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+     html {
+         font-size: 1.4vw;
+     }
+
+     .container {
+         width: 100%;
+     }
+
+     .top-left .about {
+         display: none;
+     }
+
+     .top-left .contact {
+         display: none;
+     }
+
+     .top-left a.icon {
+         float  : right;
+         display: block;
+     }
+
+     .top-left.responsive {
+         position: fixed;
+     }
+
+     .top-left.responsive .icon {
+         position: absolute;
+         right   : 2%;
+         top     : 14%;
+     }
+
+     .top-left.responsive a {
+         float     : none;
+         display   : block;
+         text-align: left;
+     }
+
+     .top-left.responsive {
+         display   : block;
+         width     : 100%;
+         text-align: left;
+     }
+
+     .icon {
+         font-size  : 37px;
+         padding-top: 1%;
+     }
+
+     .top-left a.icon {
+         justify-content: space-between;
+         margin-right   : 5%;
+         margin-top     : -1%;
+     }
+
+     .top-left:hover {
+         color: white;
+     }
+
+     .about {
+         margin-left: 2%;
+         line-height: 190%;
+         font-size  : 2.5vh;
+     }
+
+     .contact {
+         margin-left: 2%;
+         font-size  : 2.5vh;
+     }
+
+     /* grid */
+
+     .text-with-image {
+         padding       : 11rem 0;
+         padding-bottom: 7rem;
+     }
+
+     .contact-btn {
+         justify-content: center;
+         display        : flex;
+         height         : 2vh;
+         width          : 27vw;
+         font-size      : 2.3em;
+         margin-top     : 5%;
+         margin-left    : 35%;
+         padding-bottom : 2%;
+     }
+
+     /* grid1 */
+     .text-with-image1 {
+         padding-bottom: 7rem;
+     }
+
+     /* grid2 */
+     .text-with-image2 {
+         padding: 5rem;
+     }
+
+     .button2 {
+         height     : 2vh;
+         width      : 18vw;
+         margin-top : 31vh;
+         margin-left: -11vw;
+         font-size  : 1.3em;
+         padding    : 12px 16px;
+
+     }
+
+     .text2 {
+         padding-left: 17%;
+     }
+
+     /* grid3 */
+     .text-with-image3 {
+         padding: 6rem 0;
+     }
+
+     /* footer */
+     .footer {
+         height: 16vh;
+
+     }
+
+     .connect {
+         margin-bottom: 1.5%;
+     }
+
+     .footer-column {
+         grid-column-end: 4;
+     }
+
+     .appops-logo {
+         height    : 3vh;
+         margin-top: -2%;
+     }
+
+     .logo {
+         height: 1vh;
+         width : 7vw;
+     }
+
+     .franchise {
+         margin-left: 31%;
+     }
+
+     .icons {
+         margin-left: 8em;
+     }
+ }
