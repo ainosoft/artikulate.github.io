@@ -43,6 +43,7 @@
 
  .text-with-image {
      padding         : 5rem 0;
+     padding-bottom  : 0rem;
      background-color: rgb(212, 242, 255);
  }
 
@@ -85,12 +86,16 @@
 
 
  .button {
-     margin-top             : 26em;
-     margin-left            : -12em;
-     margin-bottom          : 0em;
-     padding                : 13px 20px;
+
+
+     margin-top             : 50vh;
+     margin-left            : -24vh;
+     margin-bottom          : 15vh;
+     height                 : 2.5rem;
+     width                  : 12rem;
+     font-size              : 1rem;
      background             : #28bbbb;
-     color                  : #ffffff;
+     color                  : white;
      -webkit-text-decoration: none;
      text-decoration        : none;
      border-radius          : 17px;
@@ -171,9 +176,13 @@
  }
 
  .button1 {
-     padding                : 13px 20px;
+     margin-left            : 1vh;
+     margin-bottom          : 6vh;
+     height                 : 2.5rem;
+     width                  : 12rem;
+     font-size              : 1rem;
      background             : #28bbbb;
-     color                  : #ffffff;
+     color                  : white;
      -webkit-text-decoration: none;
      text-decoration        : none;
      border-radius          : 17px;
@@ -256,17 +265,20 @@
 
 
  .button2 {
-     margin-top             : 28em;
-     margin-left            : -12em;
-     margin-bottom          : 0em;
-     padding                : 13px 20px;
-     background             : #28bbbb;
-     color                  : #ffffff;
-     -webkit-text-decoration: none;
-     text-decoration        : none;
-     border-radius          : 17px;
-     font-weight            : bold;
-     cursor                 : pointer;
+     margin-top                : 28em;
+     margin-left               : -12em;
+     margin-bottom             : 0em;
+     height                    : 2.5rem;
+     width                     : 12rem;
+     font-size                 : 1rem;
+     /* padding                : 13px 20px; */
+     background                : #28bbbb;
+     color                     : white;
+     -webkit-text-decoration   : none;
+     text-decoration           : none;
+     border-radius             : 17px;
+     font-weight               : bold;
+     cursor                    : pointer;
  }
 
  .text2 {
@@ -315,9 +327,11 @@
  }
 
  .button3 {
-     padding                : 13px 20px;
+     height                 : 2.5rem;
+     width                  : 12rem;
+     font-size              : 1rem;
      background             : #28bbbb;
-     color                  : #ffffff;
+     color                  : white;
      -webkit-text-decoration: none;
      text-decoration        : none;
      border-radius          : 17px;
@@ -413,6 +427,269 @@
 
  /* -- */
 
+
+
+
+
+
+
+ /* Responsiveness */
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+     html {
+         font-size: 1.3vw;
+     }
+
+     .container {
+         width: 100%;
+     }
+
+     .top-left .about {
+         display: none;
+     }
+
+     .top-left .contact {
+         display: none;
+     }
+
+     .top-left a.icon {
+         float  : right;
+         display: block;
+     }
+
+     .top-left.responsive {
+         position: fixed;
+     }
+
+     .top-left.responsive .icon {
+         position: absolute;
+         right   : 2%;
+         top     : 14%;
+     }
+
+     .top-left.responsive a {
+         float     : none;
+         display   : block;
+         text-align: left;
+     }
+
+     .top-left.responsive {
+         display   : block;
+         width     : 100%;
+         text-align: left;
+     }
+
+     .icon {
+         font-size  : 37px;
+         padding-top: 1%;
+     }
+
+     .top-left a.icon {
+         justify-content: space-between;
+         margin-right   : 5%;
+         margin-top     : 2%;
+     }
+
+     .top-left:hover {
+         color: white;
+     }
+
+     .about {
+         margin-left: 2%;
+         line-height: 190%;
+         font-size  : 2.5vh;
+     }
+
+     .contact {
+         margin-left: 2%;
+         font-size  : 2.5vh;
+     }
+
+     /* grid */
+
+     .grid-row {
+         display: block;
+     }
+
+     .left-grid-col {
+         margin: 2vh;
+     }
+
+     .right-grid-image {
+         display      : block;
+         width        : 70%;
+         margin-top   : 1%;
+         margin-left  : 1vh;
+         margin-bottom: 8%;
+         position     : relative;
+     }
+
+     .text-with-image {
+         padding       : 19rem 0;
+         padding-bottom: 7rem;
+     }
+
+
+     .button {
+         margin-top   : 0vh;
+         margin-left  : 28rem;
+         margin-bottom: 6vh;
+         height       : 5rem;
+         width        : 22rem;
+         font-size    : 1.7rem;
+     }
+
+
+     /* grid1 */
+     .text-with-image1 {
+         padding-bottom: 7rem;
+     }
+
+     .grid1-row {
+         display: block;
+     }
+
+     .right-grid1-col {
+         margin: 2vh;
+     }
+
+     .left-grid1-image {
+         display      : block;
+         width        : 71%;
+         margin-top   : 1%;
+         margin-left  : 29%;
+         margin-bottom: 8%;
+         position     : relative;
+     }
+
+     .text-item1 {
+         margin-bottom: 6%;
+     }
+
+     .button1 {
+         margin-top   : 0vh;
+         margin-left  : 23rem;
+         margin-bottom: 6vh;
+         height       : 5rem;
+         width        : 22rem;
+         font-size    : 1.7rem;
+     }
+
+     /* grid2 */
+     .text-with-image2 {
+         padding: 5rem;
+     }
+
+     .button2 {
+         margin-top   : 0vh;
+         margin-left  : 23rem;
+         margin-bottom: 6vh;
+         height       : 5rem;
+         width        : 22rem;
+         font-size    : 1.7rem;
+
+     }
+
+     .text2 {
+         padding-left: 8%;
+     }
+
+     .grid2-row {
+         display: block;
+     }
+
+     .left-grid2-col {
+         margin: 2vh;
+     }
+
+     .right-grid2-image {
+         display      : block;
+         width        : 77%;
+         margin-top   : 1%;
+         margin-left  : -6%;
+         margin-bottom: 8%;
+         position     : relative;
+     }
+
+
+
+
+     /* grid3 */
+     .text-with-image3 {
+         padding: 6rem 0;
+     }
+
+     .grid3-row {
+         display: block;
+     }
+
+     .right-grid3-col {
+         margin: 2vh;
+     }
+
+     .left-grid3-image {
+         display      : block;
+         width        : 73%;
+         margin-top   : 1%;
+         margin-left  : 12%;
+         margin-bottom: 8%;
+         position     : relative;
+     }
+
+     .text-item3 {
+         margin-bottom: 6%;
+     }
+
+     .button3 {
+         margin-top   : 0vh;
+         margin-left  : 23rem;
+         margin-bottom: 6vh;
+         height       : 5rem;
+         width        : 22rem;
+         font-size    : 1.7rem;
+     }
+
+     /* footer */
+     .footer {
+         height: 15rem;
+
+     }
+
+     .connect {
+         margin-bottom: 3.5%;
+     }
+
+     .footer-column {
+         grid-column-end: 4;
+     }
+
+     .appops-logo {
+         height    : 2vh;
+         margin-top: 1%;
+     }
+
+     .logo {
+         height: 1vh;
+         width : 7vw;
+     }
+
+     .fa {
+         height: 1vh;
+     }
+
+     .franchise {
+         margin-left: 32%;
+     }
+
+     .icons {
+         margin-left: 10em;
+     }
+ }
+
+
+
+
+
+
  /* Responsiveness */
  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
      html {
@@ -486,30 +763,79 @@
 
      /* grid */
 
+     .grid-row {
+         display: block;
+     }
+
+     .left-grid-col {
+         margin: 2vh;
+     }
+
+     .right-grid-image {
+         display      : block;
+         width        : 70%;
+         margin-top   : 1%;
+         margin-left  : 1vh;
+         margin-bottom: 8%;
+         position     : relative;
+     }
+
      .text-with-image {
          padding       : 19rem 0;
          padding-bottom: 7rem;
      }
 
-     .contact-btn {
-         justify-content: center;
-         display        : flex;
-         height         : 2vh;
-         width          : 31vw;
-         font-size      : 2.8em;
-         margin-top     : 5%;
-         margin-left    : 35%;
-         padding-bottom : 2%;
-     }
+     /* .button {
+         height        : 1vh;
+         margin-left   : 36%;
+         font-size     : 1em;
+         margin-bottom : 4vh;
+         padding-bottom: 1%;
+     } */
 
      .button {
-         font-size: 1.1em;
-         height   : 1vh;
+         margin-top   : 0vh;
+         margin-left  : 28rem;
+         margin-bottom: 6vh;
+         height       : 5rem;
+         width        : 22rem;
+         font-size    : 1.7rem;
      }
+
 
      /* grid1 */
      .text-with-image1 {
          padding-bottom: 7rem;
+     }
+
+     .grid1-row {
+         display: block;
+     }
+
+     .right-grid1-col {
+         margin: 2vh;
+     }
+
+     .left-grid1-image {
+         display      : block;
+         width        : 71%;
+         margin-top   : 1%;
+         margin-left  : 29%;
+         margin-bottom: 8%;
+         position     : relative;
+     }
+
+     .text-item1 {
+         margin-bottom: 6%;
+     }
+
+     .button1 {
+         margin-top   : 0vh;
+         margin-left  : 23rem;
+         margin-bottom: 6vh;
+         height       : 5rem;
+         width        : 22rem;
+         font-size    : 1.7rem;
      }
 
      /* grid2 */
@@ -518,11 +844,12 @@
      }
 
      .button2 {
-         height     : 2vh;
-         width      : 22vw;
-         margin-top : 22vh;
-         margin-left: -13vw;
-         font-size  : 1.7em;
+         margin-top   : 0vh;
+         margin-left  : 23rem;
+         margin-bottom: 6vh;
+         height       : 5rem;
+         width        : 22rem;
+         font-size    : 1.7rem;
 
      }
 
@@ -530,19 +857,69 @@
          padding-left: 8%;
      }
 
+     .grid2-row {
+         display: block;
+     }
+
+     .left-grid2-col {
+         margin: 2vh;
+     }
+
+     .right-grid2-image {
+         display      : block;
+         width        : 77%;
+         margin-top   : 1%;
+         margin-left  : -6%;
+         margin-bottom: 8%;
+         position     : relative;
+     }
+
+
+
+
      /* grid3 */
      .text-with-image3 {
          padding: 6rem 0;
      }
 
+     .grid3-row {
+         display: block;
+     }
+
+     .right-grid3-col {
+         margin: 2vh;
+     }
+
+     .left-grid3-image {
+         display      : block;
+         width        : 73%;
+         margin-top   : 1%;
+         margin-left  : 12%;
+         margin-bottom: 8%;
+         position     : relative;
+     }
+
+     .text-item3 {
+         margin-bottom: 6%;
+     }
+
+     .button3 {
+         margin-top   : 0vh;
+         margin-left  : 23rem;
+         margin-bottom: 6vh;
+         height       : 5rem;
+         width        : 22rem;
+         font-size    : 1.7rem;
+     }
+
      /* footer */
      .footer {
-         height: 12.2vh;
+         height: 15rem;
 
      }
 
      .connect {
-         margin-bottom: 1.5%;
+         margin-bottom: 3.5%;
      }
 
      .footer-column {
@@ -550,12 +927,17 @@
      }
 
      .appops-logo {
-         height: 3vh;
+         height    : 2vh;
+         margin-top: 1%;
      }
 
      .logo {
          height: 1vh;
          width : 7vw;
+     }
+
+     .fa {
+         height: 1vh;
      }
 
      .franchise {
@@ -568,10 +950,10 @@
  }
 
 
- /** Responsiveness for iPad portrait*/
+ /** Responsiveness for iPad (portrait and landscape)*/
  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
      html {
-         font-size: 1.4vw;
+         font-size: 1.9vw;
      }
 
      .container {
@@ -643,30 +1025,66 @@
 
      .text-with-image {
          padding       : 11rem 0;
-         padding-bottom: 7rem;
+         padding-bottom: 0rem;
      }
 
-     .contact-btn {
-         justify-content: center;
-         display        : flex;
-         height         : 2vh;
-         width          : 27vw;
-         font-size      : 2.3em;
-         margin-top     : 5%;
-         margin-left    : 35%;
-         padding-bottom : 2%;
+     .left-grid-col {
+         grid-column-end: 23;
      }
+
+     .right-grid-col {
+         grid-column-start: 23;
+     }
+
+     .right-grid-image {
+         width      : 46%;
+         margin-left: -1%;
+     }
+
+     /* .text-item {
+         font-size: 1.2rem;
+     } */
 
      .button {
-         font-size     : 1.1em;
-         height        : 1vh;
-         margin-top    : 19em;
-         padding-bottom: 16px;
+         height     : 3rem;
+         width      : 15rem;
+         font-size  : 1.3rem;
+         margin-top : 13em;
+         margin-left: -17vh;
      }
 
      /* grid1 */
      .text-with-image1 {
-         padding-bottom: 7rem;
+         padding-bottom: 2rem;
+     }
+
+     .left-grid1-col {
+         grid-column-end: 15;
+     }
+
+     .right-grid1-col {
+         grid-column-start: 16;
+         grid-column-end  : 28;
+     }
+
+     .left-grid1-image {
+         width      : 130%;
+         margin-left: -1%;
+     }
+
+     /* 
+     .text1 {
+         font-size: 0.8rem;
+     }
+
+     .text-item1 {
+         font-size: 0.8rem;
+     } */
+
+     .button1 {
+         height   : 3rem;
+         width    : 15rem;
+         font-size: 1.3rem;
      }
 
      /* grid2 */
@@ -674,23 +1092,62 @@
          padding: 5rem;
      }
 
-     .button2 {
-         height     : 2vh;
-         width      : 18vw;
-         margin-top : 31vh;
-         margin-left: -11vw;
-         font-size  : 1.3em;
-         padding    : 12px 16px;
+     .left-grid2-col {
+         grid-column-start: 1;
+         grid-column-end  : 23;
+     }
 
+     .right-grid2-col {
+         grid-column-start: 23;
+     }
+
+     .right-grid2-image {
+         width      : 60%;
+         margin-left: -14%;
+     }
+
+     .button2 {
+         height     : 3rem;
+         width      : 15rem;
+         font-size  : 1.3rem;
+         margin-top : 28vh;
+         margin-left: -14vw;
      }
 
      .text2 {
-         padding-left: 17%;
+         padding-left   : 17%;
+         /* font-size   : 0.8rem; */
      }
 
      /* grid3 */
      .text-with-image3 {
-         padding: 6rem 0;
+         padding: 4rem 0;
+     }
+
+     .left-grid3-col {
+         grid-column-end: 15;
+     }
+
+     .right-grid3-col {
+         grid-column-start: 16;
+         grid-column-end  : 28;
+     }
+
+     .left-grid3-image {
+         width      : 92%;
+         margin-left: -1%;
+     }
+
+     /* .text-item3 {
+         font-size: 0.8rem;
+     } */
+
+     .button3 {
+         height     : 3rem;
+         width      : 15rem;
+         font-size  : 1.3rem;
+         margin-top : 2vh;
+         margin-left: 0vw;
      }
 
      /* footer */
@@ -708,9 +1165,11 @@
      }
 
      .appops-logo {
-         height    : 3vh;
-         margin-top: -2%;
+         height     : 3vh;
+         margin-top : -2%;
+         margin-left: 79%;
      }
+
 
      .logo {
          height: 1vh;
@@ -718,162 +1177,24 @@
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 29%;
      }
 
      .icons {
-         margin-left: 8em;
+         margin-left: -1em
      }
  }
 
-
- /** Responsiveness for iPad landscape*/
- @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+ @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
      html {
-         font-size: 1.4vw;
+         font-size: 2vw;
      }
 
      .container {
          width: 100%;
      }
 
-     .top-left .about {
-         display: none;
-     }
-
-     .top-left .contact {
-         display: none;
-     }
-
-     .top-left a.icon {
-         float  : right;
-         display: block;
-     }
-
-     .top-left.responsive {
-         position: fixed;
-     }
-
-     .top-left.responsive .icon {
-         position: absolute;
-         right   : 2%;
-         top     : 14%;
-     }
-
-     .top-left.responsive a {
-         float     : none;
-         display   : block;
-         text-align: left;
-     }
-
-     .top-left.responsive {
-         display   : block;
-         width     : 100%;
-         text-align: left;
-     }
-
-     .icon {
-         font-size  : 37px;
-         padding-top: 1%;
-     }
-
-     .top-left a.icon {
-         justify-content: space-between;
-         margin-right   : 5%;
-         margin-top     : -1%;
-     }
-
-     .top-left:hover {
-         color: white;
-     }
-
-     .about {
-         margin-left: 2%;
-         line-height: 190%;
-         font-size  : 2.5vh;
-     }
-
-     .contact {
-         margin-left: 2%;
-         font-size  : 2.5vh;
-     }
-
-     /* grid */
-
-     .text-with-image {
-         padding       : 11rem 0;
-         padding-bottom: 7rem;
-     }
-
-     .contact-btn {
-         justify-content: center;
-         display        : flex;
-         height         : 2vh;
-         width          : 27vw;
-         font-size      : 2.3em;
-         margin-top     : 5%;
-         margin-left    : 35%;
-         padding-bottom : 2%;
-     }
-
-     /* grid1 */
-     .text-with-image1 {
-         padding-bottom: 7rem;
-     }
-
-     /* grid2 */
-     .text-with-image2 {
-         padding: 5rem;
-     }
-
-     .button2 {
-         height     : 2vh;
-         width      : 18vw;
-         margin-top : 31vh;
-         margin-left: -11vw;
-         font-size  : 1.3em;
-         padding    : 12px 16px;
-
-     }
-
-     .text2 {
-         padding-left: 17%;
-     }
-
-     /* grid3 */
-     .text-with-image3 {
-         padding: 6rem 0;
-     }
-
-     /* footer */
-     .footer {
-         height: 16vh;
-
-     }
-
-     .connect {
-         margin-bottom: 1.5%;
-     }
-
-     .footer-column {
-         grid-column-end: 4;
-     }
-
-     .appops-logo {
-         height    : 3vh;
-         margin-top: -2%;
-     }
-
-     .logo {
-         height: 1vh;
-         width : 7vw;
-     }
-
-     .franchise {
-         margin-left: 31%;
-     }
-
      .icons {
-         margin-left: 8em;
+         margin-left: -2em;
      }
  }
