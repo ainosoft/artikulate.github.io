@@ -718,6 +718,7 @@
      .text-item {
          line-height: 45px;
          font-weight: 200;
+         font-size  : 1.2rem;
      }
 
      .text-with-image {
@@ -728,11 +729,12 @@
      .text1 {
          padding-left: 19%;
          line-height : 45px;
+         font-size   : 0.7rem;
      }
 
      .system {
          margin-top : 10%;
-         font-size  : 2.2em;
+         font-size  : 1.7em;
          line-height: 60px;
          font-weight: 200;
          font-weight: bold;
@@ -777,7 +779,7 @@
 
      /* footer */
      .footer {
-         height: 16vh;
+         height: 27vh;
          width : 100vw;
      }
 
@@ -819,67 +821,6 @@
      .container {
          width: 100%;
      }
-
-     /* .top-left .about {
-         display: none;
-     }
-
-     .top-left .contact {
-         display: none;
-     }
-
-     .top-left a.icon {
-         float  : right;
-         display: block;
-     }
-
-     .top-left.responsive {
-         position: fixed;
-     }
-
-     .top-left.responsive .icon {
-         position: absolute;
-         right   : 2%;
-         top     : 14%;
-     }
-
-     .top-left.responsive a {
-         float     : none;
-         display   : block;
-         text-align: left;
-     }
-
-     .top-left.responsive {
-         display   : block;
-         width     : 100%;
-         text-align: left;
-     }
-
-     .icon {
-         font-size  : 37px;
-         padding-top: 1%;
-     }
-
-     .top-left a.icon {
-         justify-content: space-between;
-         margin-right   : 5%;
-         margin-top     : -1%;
-     }
-
-     .top-left:hover {
-         color: white;
-     }
-
-     .about {
-         margin-left: 2%;
-         line-height: 190%;
-         font-size  : 2.5vh;
-     }
-
-     .contact {
-         margin-left: 2%;
-         font-size  : 2.5vh;
-     } */
 
      /* navbar end */
 
@@ -1004,6 +945,14 @@
          font-size: 1.3vw;
      }
 
+     .top-left {
+         width: 99vw;
+     }
+
+     .artikulate {
+         margin-left: 6%;
+     }
+
      .container {
          width: 100%;
      }
@@ -1021,12 +970,26 @@
      }
 
      .text-with-image {
-         padding       : 11rem 0;
+         padding       : 7rem 0;
          padding-bottom: 5rem;
      }
 
+     .left-grid-col {
+         grid-column-end: 20;
+     }
+
+     .right-grid-col {
+         grid-column-start: 20;
+     }
+
+     .right-grid-image {
+         width      : 64%;
+         margin-top : -3%;
+         margin-left: -12%;
+     }
+
      .text-item {
-         font-size: 1.4rem;
+         font-size: 1.3rem;
      }
 
      .image-container {
@@ -1035,34 +998,35 @@
 
      .image2 {
          width      : 59%;
-         margin-left: -16em;
+         margin-left: -11em;
          margin-top : 10%;
      }
 
      .image3 {
-         width       : 54%;
-         margin-right: 4em;
+         width       : 52%;
+         margin-right: 5em;
          right       : 0;
          height      : 23%;
      }
 
      .arrow {
-         font-size: 11vh;
+         font-size: 9vh;
+         left     : 27%;
      }
 
      .button1 {
-         margin-left: -36%;
+         margin-left: -60%;
      }
 
      .text1 {
-         font-size   : 1.4rem;
+         font-size   : 1rem;
          padding-left: 17%;
      }
 
      /* footer */
      .footer {
-         height: 12vh;
-         width : 100vw;
+         height: 44vh;
+         width : 99vw;
      }
 
      .connect {
@@ -1086,7 +1050,7 @@
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 31%
      }
 
      .icons {
@@ -1100,6 +1064,10 @@
          font-size: 1.3vw;
      }
 
+     .top-left {
+         width: 105vw;
+     }
+
      .container {
          width: 100%;
      }
@@ -1108,8 +1076,23 @@
          height: 28vh;
      }
 
+     .left-grid-col {
+         grid-column-start: 5;
+         grid-column-end  : 22;
+     }
+
+     .right-grid-col {
+         grid-column-start: 21;
+         grid-column-end  : 50;
+     }
+
+     .right-grid-image {
+         width     : 55%;
+         margin-top: -10%;
+     }
+
      .text-item {
-         font-size: 1.4rem;
+         font-size: 1.1rem;
      }
 
      .image-container {
@@ -1117,18 +1100,37 @@
      }
 
      .button1 {
-         margin-left: 38%;
+         margin-left: -32%;
      }
 
      .text1 {
-         font-size   : 1.4rem;
-         padding-left: 17%;
+         font-size   : 1rem;
+         padding-left: 27%;
+         width       : 105vw;
+     }
+
+     .image2 {
+         width      : 59%;
+         margin-left: -13em;
+         margin-top : 17%;
+     }
+
+     .image3 {
+         width       : 55%;
+         margin-right: 3em;
+         right       : 0;
+         height      : 48%;
+     }
+
+     .arrow {
+         left      : 28%;
+         margin-top: 15%;
      }
 
      /* footer */
      .footer {
-         height: 19vh;
-         width : 100vw;
+         height: 31vh;
+         width : 105vw;
      }
 
      .connect {
@@ -1152,7 +1154,7 @@
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 34%;
      }
 
      .icons {
@@ -1334,7 +1336,7 @@
  }
 
 
- @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+ @media only screen and (min-device-width: 1200px) and (max-device-width: 1200px) {
      html {
          font-size: 1.2vw;
      }
@@ -1416,6 +1418,88 @@
      }
  }
 
+
+ @media only screen and (min-device-width: 1600px) and (max-device-width: 1600px) {
+     html {
+         font-size: 1.2vw;
+     }
+
+     .text-item {
+         font-size  : 1rem;
+         line-height: 45px;
+     }
+
+     .image-container {
+         margin-left: 5%;
+     }
+
+     .button1 {
+         margin-left: -3%;
+     }
+
+     .text1 {
+         font-size   : 1rem;
+         line-height : 45px;
+         padding-left: 24%;
+     }
+
+     .right-grid-image {
+         width      : 63%;
+         margin-top : 0%;
+         margin-left: -4%;
+     }
+
+     .text-with-image {
+         height: 45vh;
+     }
+
+     .image2 {
+         width      : 51%;
+         margin-left: -14em;
+         height     : 60vh;
+     }
+
+
+     .image3 {
+         height: 60vh;
+         width : 51%;
+     }
+
+     /* footer */
+     .footer {
+         height: 24vh;
+         width : 99vw;
+
+     }
+
+     .connect {
+         margin-bottom: 1.5%;
+     }
+
+     .footer-column {
+         grid-column-end: 4;
+     }
+
+     .appops-logo {
+         height     : 3vh;
+         margin-top : -2%;
+         margin-left: 80%;
+     }
+
+
+     .logo {
+         height: 2vh;
+         width : 7vw;
+     }
+
+     .franchise {
+         margin-left: 33%;
+     }
+
+     .icons {
+         margin-left: 13em;
+     }
+ }
 
  /* for large desktop */
  @media only screen and (min-device-width: 1920px) {

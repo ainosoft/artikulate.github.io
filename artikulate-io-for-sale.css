@@ -996,18 +996,22 @@
          margin-left: -17vh;
      }
 
+     .text-item {
+         font-size: 0.7rem;
+     }
+
      /* grid1 */
      .text-with-image1 {
          padding-bottom: 2rem;
      }
 
      .left-grid1-col {
-         grid-column-end: 14;
+         grid-column-end: 15;
      }
 
      .right-grid1-col {
-         grid-column-start: 14;
-         grid-column-end  : 22;
+         grid-column-start: 16;
+         grid-column-end  : 28;
      }
 
      .left-grid1-image {
@@ -1015,12 +1019,19 @@
          margin-left: -1%;
      }
 
+     .text-item1 {
+         font-size: 0.7rem;
+     }
+
+     .text1 {
+         font-size: 0.7rem;
+     }
 
 
      .button1 {
          height   : 3rem;
-         width    : 15rem;
-         font-size: 1.3rem;
+         width    : 13rem;
+         font-size: 1rem;
      }
 
      /* grid2 */
@@ -1042,17 +1053,22 @@
          margin-left: -14%;
      }
 
+     .text-item2 {
+         font-size: 1.2rem;
+     }
+
      .button2 {
          height     : 3rem;
-         width      : 15rem;
-         font-size  : 1.3rem;
+         width      : 13rem;
+         font-size  : 1rem;
          margin-top : 28vh;
          margin-left: -14vw;
      }
 
      .text2 {
-         padding-left   : 17%;
-         /* font-size   : 0.9rem; */
+         padding-left: 8%;
+         font-size   : 0.7rem;
+
      }
 
      /* grid3 */
@@ -1066,28 +1082,32 @@
      }
 
      .right-grid3-col {
-         grid-column-start: 13;
-         grid-column-end  : 23;
+         grid-column-start: 15;
+         grid-column-end  : 27;
      }
 
      .left-grid3-image {
-         width      : 92%;
-         margin-left: -1%;
+         width      : 100%;
+         margin-left: 4%;
      }
 
 
      .button3 {
          height     : 3rem;
-         width      : 15rem;
-         font-size  : 1.3rem;
+         width      : 13rem;
+         font-size  : 1rem;
          margin-top : 2vh;
          margin-left: 0vw;
      }
 
+     .text-item3 {
+         font-size: 0.7rem;
+     }
+
      /* footer */
      .footer {
-         height: 16vh;
-
+         height: 26vh;
+         width : 100vw;
      }
 
      .connect {
@@ -1100,22 +1120,22 @@
 
      .appops-logo {
          height     : 3vh;
-         margin-top : -1%;
-         margin-left: 79%;
+         margin-top : -2%;
+         margin-left: 78%;
      }
 
 
      .logo {
-         height: 1vh;
+         height: 2vh;
          width : 7vw;
      }
 
      .franchise {
-         margin-left: 29%;
+         margin-left: 32%;
      }
 
      .icons {
-         margin-left: 0em
+         margin-left: -1em
      }
  }
 
@@ -1129,67 +1149,6 @@
      .container {
          width: 100%;
      }
-
-     /* .top-left .about {
-         display: none;
-     }
-
-     .top-left .contact {
-         display: none;
-     }
-
-     .top-left a.icon {
-         float  : right;
-         display: block;
-     }
-
-     .top-left.responsive {
-         position: fixed;
-     }
-
-     .top-left.responsive .icon {
-         position: absolute;
-         right   : 2%;
-         top     : 14%;
-     }
-
-     .top-left.responsive a {
-         float     : none;
-         display   : block;
-         text-align: left;
-     }
-
-     .top-left.responsive {
-         display   : block;
-         width     : 100%;
-         text-align: left;
-     }
-
-     .icon {
-         font-size  : 37px;
-         padding-top: 1%;
-     }
-
-     .top-left a.icon {
-         justify-content: space-between;
-         margin-right   : 5%;
-         margin-top     : -1%;
-     }
-
-     .top-left:hover {
-         color: white;
-     }
-
-     .about {
-         margin-left: 2%;
-         line-height: 190%;
-         font-size  : 2.5vh;
-     }
-
-     .contact {
-         margin-left: 2%;
-         font-size  : 2.5vh;
-     } */
 
      /* grid */
 
@@ -1463,27 +1422,64 @@
          padding-top    : 1%;
      }
 
+     .text-with-image {
+         padding: 8rem 0;
+     }
+
+     .text-item2 {
+         font-size: 1.4rem;
+     }
+
+     .button {
+         margin-top   : 32vh;
+         margin-left  : -13vh;
+         margin-bottom: -1vh;
+         font-size    : 1.2rem;
+         height       : 3rem;
+         width        : 13rem;
+     }
+
+     .right-grid-image {
+         width      : 55%;
+         margin-top : 2%;
+         margin-left: -2%;
+     }
+
      .left-grid1-col {
-         grid-column-end: 13;
+         grid-column-end: 15;
      }
 
      .right-grid1-col {
-         grid-column-start: 14;
-         grid-column-end  : 23;
+         grid-column-start: 15;
+         grid-column-end  : 27;
      }
 
      .left-grid1-image {
-         width: 123%;
+         width: 156%;
+     }
+
+     .button1 {
+         font-size: 1.2rem;
+         height   : 3rem;
+         width    : 13rem;
      }
 
      .button2 {
-         margin-top : 18em;
-         margin-left: -7em;
+         margin-top : 20em;
+         margin-left: -9em;
+         font-size  : 1.2rem;
+         height     : 3rem;
+         width      : 13rem;
      }
 
+     .button3 {
+         font-size: 1.2rem;
+         height   : 3rem;
+         width    : 13rem;
+     }
 
      .text2 {
-         padding-left: 19%;
+         padding-left: 7%;
      }
 
      .left-grid2-col {
@@ -1496,14 +1492,24 @@
          grid-column-end  : 40;
      }
 
+     .right-grid2-image {
+         margin-left: -14%;
+         width      : 63%;
+     }
+
      .left-grid3-col {
          grid-column-start: 3;
-         grid-column-end  : 13;
+         grid-column-end  : 15;
      }
 
      .right-grid3-col {
-         grid-column-start: 15;
-         grid-column-end  : 24;
+         grid-column-start: 17;
+         grid-column-end  : 28;
+     }
+
+     .left-grid3-image {
+         margin-left: -8%;
+         width      : 116%;
      }
 
      /* footer */
@@ -1553,16 +1559,16 @@
          width: 100%;
      }
 
-     .top-left .about {
+     .top-left {
          font-size: 2.5vh;
      }
 
      .about {
-         font-size: 2.5vh;
+         font-size: 2.3vh;
      }
 
      .contact {
-         font-size: 2.5vh;
+         font-size: 2.3vh;
      }
 
      .contact-btn {
@@ -1574,6 +1580,12 @@
 
      .text-with-image {
          padding: 10rem 0;
+     }
+
+     .button {
+         margin-top   : 21vh;
+         margin-left  : -13vh;
+         margin-bottom: -5vh;
      }
 
      .icons {
@@ -1602,7 +1614,7 @@
 
      .text2 {
          font-size   : 1rem;
-         padding-left: 7%;
+         padding-left: 11%;
      }
 
      .right-grid3-col {
@@ -1622,9 +1634,9 @@
          margin-top: 25em;
      }
 
-
+     /* footer */
      .footer {
-         height: 61vh;
+         height: 46vh;
          width : 100vw;
      }
 
@@ -1682,15 +1694,20 @@
      .contact-btn {
          margin-top   : 4vh;
          margin-bottom: 4vh;
+         margin-left  : 57rem;
      }
 
 
      .text-with-image {
-         padding: 10rem 0;
+         padding: 6rem 0;
      }
 
-     .contact-btn {
-         margin-left: 38%;
+     .button {
+         margin-top   : 34vh;
+         margin-bottom: 5vh;
+         margin-left  : -20vh;
+         height       : 2.5rem;
+         width        : 11rem;
      }
 
      .icons {
@@ -1698,28 +1715,28 @@
      }
 
      .text-item {
-         font-size: 1rem;
+         font-size: 0.8rem;
      }
 
      .text-item1 {
-         font-size: 1rem;
+         font-size: 0.8rem;
      }
 
      .text-item2 {
-         font-size: 1.2rem;
+         font-size: 1rem;
      }
 
      .text-item3 {
-         font-size: 1rem;
+         font-size: 0.8rem;
      }
 
      .text1 {
-         font-size: 1rem;
+         font-size: 0.8rem;
      }
 
      .text2 {
-         font-size   : 1rem;
-         padding-left: 7%;
+         font-size   : 0.7rem;
+         padding-left: 21%;
      }
 
      .right-grid3-col {
@@ -1736,12 +1753,13 @@
      }
 
      .button2 {
-         margin-top: 25em;
+         margin-top : 22em;
+         margin-left: -11em;
      }
 
      /* footer */
      .footer {
-         height: 48vh;
+         height: 31vh;
          width : 100vw;
      }
 
@@ -1761,7 +1779,7 @@
 
 
      .logo {
-         height: 1vh;
+         height: 2vh;
          width : 7vw;
      }
 
@@ -1774,7 +1792,7 @@
      }
  }
 
- @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+ @media only screen and (min-device-width: 1200px) and (max-device-width: 1200px) {
      html {
          font-size: 1.2vw;
      }
@@ -1932,6 +1950,164 @@
      }
  }
 
+
+ @media only screen and (min-device-width: 1600px) and (max-device-width: 1600px) {
+     html {
+         font-size: 1.2vw;
+     }
+
+     /* grid1 */
+     .text-with-image {
+         padding-bottom: 2rem;
+     }
+
+     .contact-btn {
+         margin-left: 76%;
+     }
+
+     .left-grid-col {
+         grid-column-end: 23;
+     }
+
+     .right-grid-col {
+         grid-column-start: 25;
+         grid-column-end  : 40;
+     }
+
+     .right-grid-image {
+         width      : 37%;
+         margin-left: -1%;
+     }
+
+     .button {
+         margin-top   : 44vh;
+         margin-bottom: 5vh;
+         margin-left  : -27vh;
+         height       : 2rem;
+         width        : 11rem;
+     }
+
+     /* grid1 */
+     .text-with-image1 {
+         padding-bottom: 2rem;
+     }
+
+     .left-grid1-col {
+         grid-column-start: 4;
+         grid-column-end  : 15;
+     }
+
+     .right-grid1-col {
+         grid-column-start: 16;
+         grid-column-end  : 30;
+     }
+
+
+     .left-grid1-image {
+         width      : 115%;
+         margin-left: -1%;
+     }
+
+
+     .button1 {
+         height: 2rem;
+         width : 11rem;
+     }
+
+     /* grid2 */
+     .text-with-image2 {
+         padding: 5rem;
+     }
+
+     .left-grid2-col {
+         grid-column-start: 1;
+         grid-column-end  : 23;
+     }
+
+     .right-grid2-col {
+         grid-column-start: 23;
+         grid-column-end  : 40;
+     }
+
+     .right-grid2-image {
+         width      : 48%;
+         margin-left: -6%;
+         margin-top : -4%;
+     }
+
+
+     .button2 {
+         height     : 2rem;
+         width      : 11rem;
+         margin-top : 44vh;
+         margin-left: -10vw;
+     }
+
+     .text2 {
+         padding-left   : 17%;
+         /* font-size   : 0.9rem; */
+     }
+
+     /* grid3 */
+     .text-with-image3 {
+         padding: 4rem 0;
+     }
+
+     .left-grid3-col {
+         grid-column-end: 15;
+     }
+
+     .right-grid3-col {
+         grid-column-start: 16;
+         grid-column-end  : 30;
+     }
+
+     .left-grid3-image {
+         width      : 92%;
+         margin-left: -1%;
+     }
+
+     .button3 {
+         height     : 2rem;
+         width      : 11rem;
+         margin-top : 2vh;
+         margin-left: 0vw;
+     }
+
+     /* footer */
+     .footer {
+         height: 24vh;
+         width : 99vw;
+     }
+
+     .connect {
+         margin-bottom: 1.5%;
+     }
+
+     .footer-column {
+         grid-column-end: 4;
+     }
+
+     .appops-logo {
+         height     : 3vh;
+         margin-top : -2%;
+         margin-left: 81%;
+     }
+
+
+     .logo {
+         height: 2vh;
+         width : 7vw;
+     }
+
+     .franchise {
+         margin-left: 35%;
+     }
+
+     .icons {
+         margin-left: 11em;
+     }
+ }
 
 
  @media only screen and (min-device-width: 1920px) {

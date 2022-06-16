@@ -1050,12 +1050,17 @@
          margin-left: -1%;
      }
 
+     .text-item {
+         font-size: 1.2rem;
+     }
+
      .button {
-         height     : 3rem;
-         width      : 15rem;
-         font-size  : 1.3rem;
-         margin-top : 13em;
-         margin-left: -17vh;
+         height       : 3rem;
+         width        : 13rem;
+         font-size    : 1rem;
+         margin-top   : 19em;
+         margin-left  : -13vh;
+         margin-bottom: 12vh;
      }
 
      /* grid1 */
@@ -1064,12 +1069,12 @@
      }
 
      .left-grid1-col {
-         grid-column-end: 14;
+         grid-column-end: 15;
      }
 
      .right-grid1-col {
-         grid-column-start: 14;
-         grid-column-end  : 22;
+         grid-column-start: 16;
+         grid-column-end  : 28;
      }
 
      .left-grid1-image {
@@ -1077,12 +1082,19 @@
          margin-left: -1%;
      }
 
+     .text-item1 {
+         font-size: 0.7rem;
+     }
+
+     .text1 {
+         font-size: 0.7rem;
+     }
 
 
      .button1 {
          height   : 3rem;
-         width    : 15rem;
-         font-size: 1.3rem;
+         width    : 13rem;
+         font-size: 1rem;
      }
 
      /* grid2 */
@@ -1104,17 +1116,22 @@
          margin-left: -14%;
      }
 
+     .text-item2 {
+         font-size: 1.2rem;
+     }
+
      .button2 {
          height     : 3rem;
-         width      : 15rem;
-         font-size  : 1.3rem;
+         width      : 13rem;
+         font-size  : 1rem;
          margin-top : 28vh;
          margin-left: -14vw;
      }
 
      .text2 {
-         padding-left   : 17%;
-         /* font-size   : 0.9rem; */
+         padding-left: 8%;
+         font-size   : 0.7rem;
+
      }
 
      /* grid3 */
@@ -1128,27 +1145,31 @@
      }
 
      .right-grid3-col {
-         grid-column-start: 13;
-         grid-column-end  : 23;
+         grid-column-start: 15;
+         grid-column-end  : 27;
      }
 
      .left-grid3-image {
-         width      : 92%;
-         margin-left: -1%;
+         width      : 100%;
+         margin-left: 4%;
      }
 
 
      .button3 {
          height     : 3rem;
-         width      : 15rem;
-         font-size  : 1.3rem;
+         width      : 13rem;
+         font-size  : 1rem;
          margin-top : 2vh;
          margin-left: 0vw;
      }
 
+     .text-item3 {
+         font-size: 0.7rem;
+     }
+
      /* footer */
      .footer {
-         height: 15vh;
+         height: 26vh;
          width : 100vw;
      }
 
@@ -1173,7 +1194,7 @@
      }
 
      .franchise {
-         margin-left: 29%;
+         margin-left: 32%;
      }
 
      .icons {
@@ -1492,33 +1513,64 @@
          padding: 9rem 0;
      }
 
+     .text-item {
+         font-size: 1.4rem;
+     }
+
+     .text-item2 {
+         font-size: 1.4rem;
+     }
+
      .button {
-         margin-top   : 24vh;
+         margin-top   : 32vh;
          margin-left  : -13vh;
          margin-bottom: -1vh;
+         font-size    : 1.2rem;
+         height       : 3rem;
+         width        : 13rem;
+     }
+
+     .right-grid-image {
+         width      : 55%;
+         margin-top : 2%;
+         margin-left: -2%;
      }
 
      .left-grid1-col {
-         grid-column-end: 13;
+         grid-column-end: 15;
      }
 
      .right-grid1-col {
-         grid-column-start: 14;
-         grid-column-end  : 23;
+         grid-column-start: 15;
+         grid-column-end  : 27;
      }
 
      .left-grid1-image {
-         width: 123%;
+         width: 156%;
+     }
+
+     .button1 {
+         font-size: 1.2rem;
+         height   : 3rem;
+         width    : 13rem;
      }
 
      .button2 {
-         margin-top : 18em;
-         margin-left: -7em;
+         margin-top : 20em;
+         margin-left: -9em;
+         font-size  : 1.2rem;
+         height     : 3rem;
+         width      : 13rem;
      }
 
+     .button3 {
+         font-size: 1.2rem;
+         height   : 3rem;
+         width    : 13rem;
+     }
 
      .text2 {
-         padding-left: 19%;
+         padding-left: 7%;
      }
 
      .left-grid2-col {
@@ -1531,14 +1583,24 @@
          grid-column-end  : 40;
      }
 
+     .right-grid2-image {
+         margin-left: -14%;
+         width      : 63%;
+     }
+
      .left-grid3-col {
          grid-column-start: 3;
-         grid-column-end  : 13;
+         grid-column-end  : 15;
      }
 
      .right-grid3-col {
-         grid-column-start: 15;
-         grid-column-end  : 24;
+         grid-column-start: 17;
+         grid-column-end  : 28;
+     }
+
+     .left-grid3-image {
+         margin-left: -8%;
+         width      : 116%;
      }
 
      /* footer */
@@ -1657,9 +1719,9 @@
 
      /* footer */
      .footer {
-         /* height: 46vh; */
-         height: 12vh;
-         width : 100vw;
+         height   : 46vh;
+         /* height: 12vh; */
+         width    : 100vw;
      }
 
      .connect {
@@ -1713,20 +1775,16 @@
          font-size: 2.5vh;
      }
 
-     .contact-btn {
-         margin-top   : 4vh;
-         margin-bottom: -1vh;
-     }
-
-
      .text-with-image {
-         padding: 10rem 0;
+         padding: 6rem 0;
      }
 
      .button {
-         margin-top   : 35vh;
-         margin-bottom: -6vh;
+         margin-top   : 34vh;
+         margin-bottom: 5vh;
          margin-left  : -20vh;
+         height       : 2.5rem;
+         width        : 11rem;
      }
 
      .icons {
@@ -1738,23 +1796,23 @@
      }
 
      .text-item1 {
-         font-size: 1rem;
+         font-size: 0.8rem;
      }
 
      .text-item2 {
-         font-size: 1.2rem;
+         font-size: 1rem;
      }
 
      .text-item3 {
-         font-size: 1rem;
+         font-size: 0.8rem;
      }
 
      .text1 {
-         font-size: 1rem;
+         font-size: 0.8rem;
      }
 
      .text2 {
-         font-size   : 1rem;
+         font-size   : 0.7rem;
          padding-left: 21%;
      }
 
@@ -1772,12 +1830,13 @@
      }
 
      .button2 {
-         margin-top: 19em;
+         margin-top : 22em;
+         margin-left: -11em;
      }
 
      /* footer */
      .footer {
-         height: 19vh;
+         height: 31vh;
          width : 100vw;
      }
 
@@ -1811,7 +1870,163 @@
  }
 
  /* small dekstop */
- @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+ @media only screen and (min-device-width: 1200px) and (max-device-width: 1200px) {
+     html {
+         font-size: 1.2vw;
+     }
+
+     /* grid1 */
+     .text-with-image {
+         padding-bottom: 2rem;
+     }
+
+     .left-grid-col {
+         grid-column-end: 23;
+     }
+
+     .right-grid-col {
+         grid-column-start: 25;
+         grid-column-end  : 40;
+     }
+
+     .right-grid-image {
+         width      : 37%;
+         margin-left: -1%;
+     }
+
+     .button {
+         margin-top   : 44vh;
+         margin-bottom: 5vh;
+         margin-left  : -27vh;
+         height       : 2rem;
+         width        : 11rem;
+     }
+
+     /* grid1 */
+     .text-with-image1 {
+         padding-bottom: 2rem;
+     }
+
+     .left-grid1-col {
+         grid-column-start: 4;
+         grid-column-end  : 15;
+     }
+
+     .right-grid1-col {
+         grid-column-start: 16;
+         grid-column-end  : 30;
+     }
+
+
+     .left-grid1-image {
+         width      : 115%;
+         margin-left: -1%;
+     }
+
+
+     .button1 {
+         height: 2rem;
+         width : 11rem;
+     }
+
+     /* grid2 */
+     .text-with-image2 {
+         padding: 5rem;
+     }
+
+     .left-grid2-col {
+         grid-column-start: 1;
+         grid-column-end  : 23;
+     }
+
+     .right-grid2-col {
+         grid-column-start: 23;
+         grid-column-end  : 40;
+     }
+
+     .right-grid2-image {
+         width      : 48%;
+         margin-left: -6%;
+         margin-top : -4%;
+     }
+
+
+     .button2 {
+         height     : 2rem;
+         width      : 11rem;
+         margin-top : 44vh;
+         margin-left: -10vw;
+     }
+
+     .text2 {
+         padding-left   : 17%;
+         /* font-size   : 0.9rem; */
+     }
+
+     /* grid3 */
+     .text-with-image3 {
+         padding: 4rem 0;
+     }
+
+     .left-grid3-col {
+         grid-column-end: 15;
+     }
+
+     .right-grid3-col {
+         grid-column-start: 16;
+         grid-column-end  : 30;
+     }
+
+     .left-grid3-image {
+         width      : 92%;
+         margin-left: -1%;
+     }
+
+     .button3 {
+         height     : 2rem;
+         width      : 11rem;
+         margin-top : 2vh;
+         margin-left: 0vw;
+     }
+
+     /* footer */
+     .footer {
+         height: 24vh;
+         width : 99vw;
+     }
+
+     .connect {
+         margin-bottom: 1.5%;
+     }
+
+     .footer-column {
+         grid-column-end: 4;
+     }
+
+     .appops-logo {
+         height     : 3vh;
+         margin-top : -2%;
+         margin-left: 81%;
+     }
+
+
+     .logo {
+         height: 2vh;
+         width : 7vw;
+     }
+
+     .franchise {
+         margin-left: 35%;
+     }
+
+     .icons {
+         margin-left: 11em;
+     }
+ }
+
+
+ /* small dekstop */
+ @media only screen and (min-device-width: 1600px) and (max-device-width: 1600px) {
      html {
          font-size: 1.2vw;
      }
