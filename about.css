@@ -1274,8 +1274,13 @@
      }
 
      .left-grid-col {
-         grid-column-start: 5;
-         grid-column-end  : 18;
+         grid-column-start: 2;
+         grid-column-end  : 20;
+     }
+
+     .right-grid-col {
+         grid-column-start: 20;
+         grid-column-end  : 50;
      }
 
      .image-container {
@@ -1298,13 +1303,13 @@
      .right-grid-image {
          width      : 75%;
          margin-top : 4%;
-         margin-left: -13%;
+         margin-left: -20%;
      }
 
      .text-with-image {
          height        : 43vh;
          padding       : 9rem 0;
-         padding-bottom: 13%;
+         padding-bottom: 0%;
      }
 
      .image2 {
@@ -1325,7 +1330,8 @@
 
      /* footer */
      .footer {
-         height: 13vh;
+         height: 29vh;
+         width : 100vw;
      }
 
      .connect {
@@ -1353,7 +1359,7 @@
      }
 
      .icons {
-         margin-left: 5em;
+         margin-left: 6em;
      }
  }
 
@@ -2136,235 +2142,5 @@
 
      .icons {
          margin-left: 13em;
-     }
- }
-
- /* ipad pro 11-inch 3rd generation Portrait */
- @media only screen and (min-device-width: 948px) and (max-device-width: 948px) and (orientation: portrait) {
-     html {
-         font-size: 1.2vw;
-     }
-
-     .top-left {
-         font-size: 2.5vh;
-     }
-
-     .about,
-     .contact {
-         font-size: 2vh;
-     }
-
-     .text-with-image {
-         padding       : 10rem 0;
-         padding-bottom: 8rem;
-     }
-
-     .text-item {
-         font-size  : 1.6rem;
-         line-height: 45px;
-     }
-
-     .left-grid-col {
-         grid-column-start: 3;
-         grid-column-end  : 25;
-     }
-
-     .right-grid-col {
-         grid-column-start: 25;
-         grid-column-end  : 50;
-     }
-
-     .image-container {
-         margin-top: 5%;
-     }
-
-     .button1 {
-         margin-left: -64%;
-         font-size  : 1.4rem;
-         height     : 3.4rem;
-         width      : 16rem;
-     }
-
-     .text1 {
-         font-size   : 1.2rem;
-         line-height : 45px;
-         padding-left: 15%;
-     }
-
-     .right-grid-image {
-         width      : 66%;
-         margin-top : 1%;
-         margin-left: -18%;
-     }
-
-     .image2 {
-         width      : 51%;
-         margin-left: -9em;
-         height     : 20vh;
-         margin-top : 13%;
-     }
-
-
-     .image3 {
-         height      : 20vh;
-         width       : 49%;
-         margin-right: 5em;
-     }
-
-     .arrow {
-         font-size: 8vh;
-         left     : 35%;
-     }
-
-     /* footer */
-     .footer {
-         height: 45vh;
-         width : 100vw;
-     }
-
-     .connect {
-         margin-bottom: 1.5%;
-         font-size    : 2rem;
-     }
-
-     .footer-column {
-         grid-column-end: 4;
-     }
-
-     .appops-logo {
-         height     : 3vh;
-         margin-top : -1%;
-         margin-left: 80%;
-         font-size  : 1.5rem;
-     }
-
-     .logo {
-         height: 1.5vh;
-         width : 7vw;
-     }
-
-     .franchise {
-         margin-left: 35%;
-         font-size  : 2.2rem;
-     }
-
-     .icons {
-         margin-left: 3.5em;
-     }
-
-     .fa {
-         height   : 1vh;
-         font-size: 1.5rem !important;
-     }
- }
-
- /*  ipad pro 11-inch 3rd generation landscape */
- @media only screen and (min-width: 1357px) and (max-device-width: 1357px) and (orientation: landscape) {
-     html {
-         font-size: 1.3vw;
-     }
-
-     .top-left {
-         font-size: 1.8rem;
-     }
-
-     .about,
-     .contact {
-         font-size: 1.6rem;
-     }
-
-     .text-with-image {
-         padding       : 6rem 0;
-         padding-bottom: 6rem;
-     }
-
-     .text-item {
-         font-size  : 1.2rem;
-         line-height: 45px;
-     }
-
-     .left-grid-col {
-         grid-column-start: 3;
-         grid-column-end  : 25;
-     }
-
-     .right-grid-col {
-         grid-column-start: 25;
-         grid-column-end  : 50;
-     }
-
-     .image-container {
-         margin-top: 5%;
-     }
-
-     .button1 {
-         margin-left: -64%;
-         font-size  : 1rem;
-         height     : 2.5rem;
-         width      : 12rem;
-     }
-
-     .text1 {
-         font-size   : 0.9rem;
-         line-height : 45px;
-         padding-left: 24%;
-     }
-
-     .right-grid-image {
-         width      : 66%;
-         margin-top : -4%;
-         margin-left: -18%;
-     }
-
-     .image2 {
-         width      : 50%;
-         margin-left: -3em;
-         height     : 43vh;
-         margin-top : 13%;
-     }
-
-     .image3 {
-         height      : 43vh;
-         width       : 50%;
-         margin-right: 6em;
-     }
-
-     .arrow {
-         font-size: 12vh;
-         left     : 35%;
-     }
-
-     /* footer */
-     .footer {
-         height: 24vh;
-         width : 100vw;
-     }
-
-     .connect {
-         margin-bottom: 1.5%;
-     }
-
-     .footer-column {
-         grid-column-end: 4;
-     }
-
-     .appops-logo {
-         height     : 3vh;
-         margin-top : -1.5%;
-         margin-left: 81%;
-     }
-
-
-     .logo {
-         height: 2vh;
-         width : 7vw;
-     }
-
-     .franchise {
-         margin-left: 31%;
-     }
-
-     .icons {
-         margin-left: 11em;
      }
  }
