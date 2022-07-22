@@ -1,11 +1,17 @@
+ * {
+     box-sizing: border-box;
+ }
+
  html {
-     font-size: 1vw;
+     font-size : 1vw;
+     overflow-x: hidden;
+     overflow-y: auto;
  }
 
  body {
-     margin     : 0;
+     margin     : 0px;
      font-family: 'Comfortaa';
-     height     : 100%;
+     overflow-x : hidden;
  }
 
  .top-left {
@@ -43,7 +49,7 @@
  /* grid */
 
  .text-with-image {
-     padding: 6rem 0;
+     padding: 6rem 0 3rem;
  }
 
  .grid-row {
@@ -56,48 +62,44 @@
  .left-grid-col {
      display          : block;
      grid-column-start: 5;
-     grid-column-end  : 18;
-     height           : 45vh;
+     grid-column-end  : 23;
  }
 
  .right-grid-col {
      display          : block;
-     grid-column-start: 18;
-     grid-column-end  : 50;
+     grid-column-start: 23;
+     grid-column-end  : 48;
  }
-
 
  .right-grid-image {
      box-sizing: border-box;
      display   : block;
-     width     : 55%;
+     width     : 46%;
      position  : absolute;
      margin-top: -3%;
  }
 
  .text-item {
-     font-size  : 18px;
-     line-height: 31px;
+     font-size  : 2vh;
+     line-height: 1.7em;
      font-weight: 200;
  }
 
  .text1 {
      box-sizing      : border-box;
      padding         : 2%;
-     padding-left    : 29%;
+     padding-left    : 31%;
      background-color: #d4f2ff;
-     line-height     : 31px;
-     margin-top      : 4%;
+     line-height     : 1.7em;
+     margin-top      : 1%;
  }
-
-
 
 
  /** Image container css */
 
  .image-container {
      box-sizing: border-box;
-     margin-top: 10%;
+     margin-top: 4%;
  }
 
  .image2 {
@@ -175,12 +177,14 @@
  /* -footer-- */
 
  .footer {
-     position        : relative;
-     width           : 99vw;
-     height          : 19.2vh;
-     background-color: rgb(70 136 127);
-     color           : white;
-     text-align      : center;
+     position           : relative;
+     width              : 100vw;
+     /* height          : 19.2vh; */
+     height             : 16vh;
+     background-color   : rgb(70 136 127);
+     color              : white;
+     text-align         : center;
+     font-size          : 0.8rem;
  }
 
  .footer-content {
@@ -196,13 +200,16 @@
 
  /* footer icons css */
  .fa {
-     padding        : 6%;
-     height         : 2vh;
-     width          : 5vw;
-     text-align     : center;
-     text-decoration: none;
-     margin         : 6px 2px;
-     border-radius  : 67%;
+     padding               : 5%;
+     height                : 5vh;
+     width                 : 4vw;
+     /* padding            : 6%;
+     height                : 2vh; */
+     /* width              : 5vw; */
+     text-align            : center;
+     text-decoration       : none;
+     margin                : 6px 2px;
+     border-radius         : 67%;
  }
 
  .fa:hover {
@@ -226,8 +233,9 @@
  }
 
  .icons {
-     display    : flex;
-     margin-left: 16em;
+     display       : flex;
+     /* margin-left: 16em; */
+     margin-left   : 29em;
  }
 
  .logo {
@@ -247,12 +255,12 @@
 
  .appops-logo {
      margin-top : -1%;
-     margin-left: 82%;
+     margin-left: 83%;
      height     : 5vh;
  }
 
  .connect {
-     margin-left  : 80%;
+     margin-left  : 81%;
      padding-top  : 0.5em;
      margin-bottom: 0.5%;
  }
@@ -261,9 +269,9 @@
 
 
  /* Responsiveness for mobile*/
- @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ @media only screen and (min-width: 320px) and (max-device-width: 480px) {
      html {
-         font-size: 1.3vw;
+         font-size: 4.5vw;
      }
 
      .container {
@@ -307,14 +315,12 @@
      }
 
      .icon {
-         font-size  : 37px;
-         padding-top: 1%;
+         font-size: 2rem;
      }
 
      .top-left a.icon {
          justify-content: space-between;
          margin-right   : 5%;
-         margin-top     : 2%;
      }
 
      .top-left:hover {
@@ -323,7 +329,6 @@
 
      .about {
          margin-left: 2%;
-         line-height: 190%;
          font-size  : 2.5vh;
      }
 
@@ -334,12 +339,17 @@
 
      /* navbar end */
 
+     .text-with-image {
+         padding-top  : 24%;
+         margin-left  : 8%;
+         margin-bottom: 65%;
+     }
+
      .button1 {
-         height     : 5rem;
-         width      : 22rem;
-         font-size  : 1.7rem;
-         margin-left: -2vh;
-         font-weight: bold;
+         height     : 2.3rem;
+         width      : 11rem;
+         font-size  : 1em;
+         margin-left: -9vh;
      }
 
      .grid-row {
@@ -349,54 +359,49 @@
      }
 
      .text-item {
-         font-size  : 1.7vh;
-         line-height: 65px;
+         font-size  : 2.2vh;
          font-weight: 200;
-     }
-
-     .text-with-image {
-         margin-bottom: 28%;
-         margin-left  : 9%;
      }
 
      .text1 {
-         padding-left: 8%;
-         line-height : 62px;
+         padding-left: 6%;
+     }
+
+     .text1 h2 {
+         font-size: 1.3em;
      }
 
      .system {
-         margin-top : 10%;
-         font-size  : 2.2em;
-         line-height: 60px;
-         font-weight: 200;
-         font-weight: bold;
+         margin-top: 10%;
+         font-size : 1.3em;
      }
 
      .right-grid-image {
-         box-sizing: border-box;
-         display   : block;
-         width     : 70%;
-         position  : absolute;
-         margin-top: -10%;
-     }
-
-     .text-with-image {
-         height     : 48vh;
-         padding-top: 15%;
-     }
-
-     .image3 {
-         height: 15%;
-     }
-
-     .arrow {
-         font-size   : 8vh;
-         color       : darkblue;
-         /* top      : 123%; */
+         width      : 138%;
+         margin-top : -10%;
+         margin-left: -47%;
      }
 
      .image-container {
          margin-bottom: 7%;
+         margin-top   : 10%;
+     }
+
+     .image2 {
+         width      : 70%;
+         margin-left: -4em;
+         margin-top : 15%;
+     }
+
+     .image3 {
+         height      : 21%;
+         margin-right: 1em;
+         width       : 60%;
+     }
+
+     .arrow {
+         font-size: 8vh;
+         left     : 25%;
      }
 
      .request-button {
@@ -406,12 +411,12 @@
 
      /* footer */
      .footer {
-         height: 15rem;
-
+         height   : 5.8rem;
+         font-size: 0.5rem;
      }
 
      .connect {
-         margin-bottom: 3.5%;
+         margin-left: 73%;
      }
 
      .footer-column {
@@ -419,25 +424,26 @@
      }
 
      .appops-logo {
-         height    : 2vh;
-         margin-top: 1%;
+         margin-left: 69%;
      }
 
      .logo {
-         height: 1vh;
-         width : 7vw;
+         height: 1.6vh;
+         width : 15vw;
      }
 
      .fa {
-         height: 1vh;
+         height : 4vh;
+         width  : 7vw;
+         padding: 6%;
      }
 
      .franchise {
-         margin-left: 32%;
+         margin-left: 24%;
      }
 
      .icons {
-         margin-left: 10em;
+         margin-left: -5em;
      }
  }
 
@@ -447,9 +453,9 @@
 
 
  /* Responsiveness for mobile*/
- @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+ @media only screen and (min-width: 360px) and (max-device-width: 640px) {
      html {
-         font-size: 1.3vw;
+         font-size: 4.5vw;
      }
 
      .container {
@@ -493,14 +499,12 @@
      }
 
      .icon {
-         font-size  : 37px;
-         padding-top: 1%;
+         font-size: 2rem;
      }
 
      .top-left a.icon {
          justify-content: space-between;
          margin-right   : 5%;
-         margin-top     : 2%;
      }
 
      .top-left:hover {
@@ -509,7 +513,6 @@
 
      .about {
          margin-left: 2%;
-         line-height: 190%;
          font-size  : 2.5vh;
      }
 
@@ -520,70 +523,69 @@
 
      /* navbar end */
 
-     .button1 {
-         height     : 5rem;
-         width      : 22rem;
-         font-size  : 1.7rem;
-         margin-left: -2vh;
-         font-weight: bold;
-     }
-
      .grid-row {
          box-sizing    : border-box;
          display       : flex;
          flex-direction: column;
      }
 
-     .text-item {
-         font-size  : 1.7vh;
-         line-height: 65px;
-         font-weight: 200;
-     }
-
      .text-with-image {
-         margin-bottom: 28%;
-         margin-left  : 9%;
-     }
-
-     .text1 {
-         padding-left: 8%;
-         line-height : 62px;
+         padding-top  : 24%;
+         margin-left  : 8%;
+         margin-bottom: 65%;
      }
 
      .system {
-         margin-top : 10%;
-         font-size  : 2.2em;
-         line-height: 60px;
-         font-weight: 200;
-         font-weight: bold;
+         margin-top: 10%;
+         font-size : 1.3em;
+     }
+
+     .button1 {
+         height     : 2.3rem;
+         width      : 11rem;
+         font-size  : 1em;
+         margin-left: -9vh;
      }
 
      .right-grid-image {
-         box-sizing : border-box;
-         display    : block;
-         width      : 87%;
-         position   : absolute;
-         margin-top : -22%;
-         margin-left: -12%;
+         width      : 138%;
+         margin-top : -10%;
+         margin-left: -47%;
      }
 
-     .text-with-image {
-         height     : 48vh;
-         padding-top: 15%;
+     .text-item {
+         font-size  : 2.2vh;
+         font-weight: 200;
      }
 
-     .image3 {
-         height: 20%;
+     .text1 {
+         padding-left: 6%;
      }
 
-     .arrow {
-         font-size   : 8vh;
-         color       : darkblue;
-         /* top      : 123%; */
+     .text1 h2 {
+         font-size: 1.3em;
      }
 
      .image-container {
          margin-bottom: 7%;
+         margin-top   : 10%;
+     }
+
+     .image2 {
+         width      : 70%;
+         margin-left: -4em;
+         margin-top : 15%;
+     }
+
+     .image3 {
+         height      : 21%;
+         margin-right: 1em;
+         width       : 60%;
+     }
+
+     .arrow {
+         font-size: 8vh;
+         left     : 25%;
      }
 
      .request-button {
@@ -593,12 +595,12 @@
 
      /* footer */
      .footer {
-         height: 15rem;
-
+         height   : 5.8rem;
+         font-size: 0.5rem;
      }
 
      .connect {
-         margin-bottom: 3.5%;
+         margin-left: 73%;
      }
 
      .footer-column {
@@ -606,31 +608,32 @@
      }
 
      .appops-logo {
-         height    : 2vh;
-         margin-top: 1%;
+         margin-left: 69%;
      }
 
      .logo {
-         height: 1vh;
-         width : 7vw;
+         height: 1.6vh;
+         width : 15vw;
      }
 
      .fa {
-         height: 1vh;
+         height : 4vh;
+         width  : 7vw;
+         padding: 6%;
      }
 
      .franchise {
-         margin-left: 32%;
+         margin-left: 24%;
      }
 
      .icons {
-         margin-left: 10em;
+         margin-left: -5em;
      }
  }
 
 
  /* Responsiveness for ipad portrait*/
- @media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) {
+ @media only screen and (min-width: 768px) and (max-device-width: 768px) and (orientation: portrait) {
      html {
          font-size: 1.8vw;
      }
@@ -690,9 +693,9 @@
      }
 
      .about {
-         margin-left: 2%;
-         line-height: 190%;
-         font-size  : 2.5vh;
+         margin-left   : 2%;
+         /* line-height: 190%; */
+         font-size     : 2.5vh;
      }
 
      .contact {
@@ -715,29 +718,25 @@
          flex-direction: column;
      }
 
+     .text-with-image {
+         margin-bottom: 35%;
+         margin-left  : 9%;
+         padding-top  : 7%;
+     }
+
+     .system {
+         margin-top: 10%;
+         font-size : 1.7em;
+     }
+
      .text-item {
-         line-height: 45px;
          font-weight: 200;
          font-size  : 1.2rem;
      }
 
-     .text-with-image {
-         margin-bottom: 32%;
-         margin-left  : 9%;
-     }
-
      .text1 {
          padding-left: 19%;
-         line-height : 45px;
-         font-size   : 0.7rem;
-     }
-
-     .system {
-         margin-top : 10%;
-         font-size  : 1.7em;
-         line-height: 60px;
-         font-weight: 200;
-         font-weight: bold;
+         font-size   : 1.2rem;
      }
 
      .right-grid-image {
@@ -746,11 +745,6 @@
          width     : 73%;
          position  : absolute;
          margin-top: 2%;
-     }
-
-     .text-with-image {
-         height     : 48vh;
-         padding-top: 7%;
      }
 
      .image2 {
@@ -763,9 +757,7 @@
      }
 
      .arrow {
-         font-size   : 8vh;
-         color       : darkblue;
-         /* top      : 123%; */
+         font-size: 8vh;
      }
 
      .image-container {
@@ -774,17 +766,16 @@
 
      .request-button {
          margin-left  : 40%;
-         margin-bottom: 5%;
+         margin-bottom: 2%;
      }
 
      /* footer */
      .footer {
-         height: 27vh;
-         width : 100vw;
+         height: 23vh;
      }
 
      .connect {
-         margin-bottom: 1.5%;
+         margin-left: 78%;
      }
 
      .footer-column {
@@ -793,10 +784,14 @@
 
      .appops-logo {
          height     : 3vh;
-         margin-top : -1%;
          margin-left: 80%;
      }
 
+     .fa {
+         height : 4vh;
+         width  : 6vw;
+         padding: 5%;
+     }
 
      .logo {
          height: 1.5vh;
@@ -804,18 +799,18 @@
      }
 
      .franchise {
-         margin-left: 27%;
+         margin-left: 34%;
      }
 
      .icons {
-         margin-left: 2em;
+         margin-left: 4em
      }
  }
 
  /** Responsiveness for iPad (portrait and landscape)*/
- @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: landscape) {
+ @media only screen and (min-width: 1024px) and (max-device-width: 1024px) and (orientation: landscape) {
      html {
-         font-size: 1.6vw;
+         font-size: 1.7vw;
      }
 
      .container {
@@ -824,26 +819,31 @@
 
      /* navbar end */
 
-
      .image-container {
          margin-left: 5%;
      }
 
      .left-grid-col {
-         grid-column-start: 6;
-         grid-column-end  : 21;
-     }
-
-     .right-grid-col {
-         grid-column-start: 21;
+         grid-column-start: 4;
          grid-column-end  : 24;
      }
 
+     .right-grid-col {
+         grid-column-start: 24;
+         grid-column-end  : 47;
+     }
+
+     .right-grid-image {
+         width      : 60%;
+         margin-top : 1%;
+         margin-left: -12%;
+     }
+
      .button1 {
-         height     : 3rem;
-         width      : 15rem;
-         margin-left: 52%;
-         font-weight: bold;
+         height     : 2.5rem;
+         width      : 12rem;
+         margin-top : -1em;
+         margin-left: 58%;
      }
 
      .request-button {
@@ -851,7 +851,7 @@
      }
 
      .text-item {
-         line-height: 45px;
+         /* line-height: 45px; */
          font-weight: 200;
          font-size  : 1.5vw;
      }
@@ -864,28 +864,20 @@
 
      .text1 {
          padding-left: 22%;
-         line-height : 45px;
+     }
+
+     .text1 h2 {
+         font-size: 1.3rem;
      }
 
      .system {
-         margin-top : 10%;
-         font-weight: 200;
-         font-weight: bold;
+         font-size : 1.3rem;
+         margin-top: 10%;
      }
-
-     .right-grid-image {
-         box-sizing: border-box;
-         display   : block;
-         width     : 57%;
-         position  : absolute;
-         margin-top: 6%;
-     }
-
-
 
      .image2 {
          width      : 54%;
-         margin-left: -12em;
+         margin-left: -9em;
          margin-top : 12%;
      }
 
@@ -895,8 +887,7 @@
      }
 
      .arrow {
-         color       : darkblue;
-         /* top      : 123%; */
+         font-size: 14vh;
      }
 
      .image-container {
@@ -910,90 +901,103 @@
 
      /* footer */
      .footer {
-         height: 22vh;
-         width : 100vw;
-
+         height   : 16vh;
+         font-size: 0.7rem;
      }
 
-     .connect {
+     /* .connect {
          margin-bottom: 1.5%;
-     }
+     } */
 
      .footer-column {
          grid-column-end: 4;
      }
 
      .appops-logo {
-         height     : 3vh;
-         margin-top : -2%;
-         margin-left: 80%;
+         height        : 3vh;
+         /* margin-top : -0.5%; */
+         margin-left   : 81%;
      }
-
 
      .logo {
          height: 2vh;
          width : 7vw;
      }
 
+     .fa {
+         padding: 6%;
+         height : 6vh;
+     }
+
      .franchise {
-         margin-left: 29%;
+         margin-left: 35%;
      }
 
      .icons {
-         margin-left: 5em;
+         margin-left: 13em;
      }
  }
 
  @media only screen and (min-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) {
      html {
-         font-size: 1.3vw;
+         font-size: 1.4vw;
      }
 
      .top-left {
-         width: 100vw;
+         font-size: 3vh;
      }
 
-     .artikulate {
-         margin-left: 6%;
+     .about,
+     .contact {
+         font-size: 2.3vh;
      }
 
      .container {
          width: 100%;
      }
 
-     .top-left {
-         font-size: 2.5vh;
-     }
-
-     .about {
-         font-size: 2.3vh;
-     }
-
-     .contact {
-         font-size: 2.3vh;
-     }
-
      .text-with-image {
          padding       : 7rem 0;
-         padding-bottom: 5rem;
+         padding-bottom: 2rem;
      }
 
      .left-grid-col {
-         grid-column-end: 20;
+         grid-column-start: 3;
+         grid-column-end  : 25;
      }
 
      .right-grid-col {
-         grid-column-start: 20;
+         grid-column-start: 25;
+         grid-column-end  : 48;
      }
 
      .right-grid-image {
          width      : 64%;
          margin-top : -3%;
-         margin-left: -12%;
+         margin-left: -17%;
      }
 
      .text-item {
-         font-size: 1.3rem;
+         font-size: 1.2rem;
+     }
+
+     .button1 {
+         margin-left: -78%;
+         height     : 3rem;
+         width      : 13rem;
+     }
+
+     .text1 {
+         font-size   : 1.2rem;
+         padding-left: 17%;
+     }
+
+     .system {
+         font-size: 1.2rem;
+     }
+
+     .text1 h2 {
+         font-size: 1.2rem;
      }
 
      .image-container {
@@ -1018,25 +1022,14 @@
          left     : 27%;
      }
 
-     .button1 {
-         margin-left: -60%;
-         height     : 3rem;
-         width      : 13rem;
-     }
-
-     .text1 {
-         font-size   : 1rem;
-         padding-left: 17%;
-     }
-
      /* footer */
      .footer {
-         height: 45.5vh;
-         width : 100vw;
+         height   : 42.5vh;
+         font-size: 0.7em;
      }
 
      .connect {
-         margin-bottom: 1.5%;
+         margin-left: 82%;
      }
 
      .footer-column {
@@ -1045,119 +1038,18 @@
 
      .appops-logo {
          height     : 3vh;
-         margin-top : -1%;
-         margin-left: 81%;
+         margin-top : -0.8%;
+         margin-left: 83%;
      }
 
+     .fa {
+         height : 3.5vh;
+         width  : 5vw;
+         padding: 7%;
+     }
 
      .logo {
-         height: 1vh;
-         width : 7vw;
-     }
-
-     .franchise {
-         margin-left: 31%
-     }
-
-     .icons {
-         margin-left: 11em;
-     }
- }
-
-
- @media only screen and (min-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) {
-     html {
-         font-size: 1.3vw;
-     }
-
-     .top-left {
-         width: 105vw;
-     }
-
-     .container {
-         width: 100%;
-     }
-
-     .text-with-image {
-         height: 28vh;
-     }
-
-     .left-grid-col {
-         grid-column-start: 5;
-         grid-column-end  : 22;
-     }
-
-     .right-grid-col {
-         grid-column-start: 21;
-         grid-column-end  : 50;
-     }
-
-     .right-grid-image {
-         width     : 55%;
-         margin-top: -10%;
-     }
-
-     .text-item {
-         font-size: 1.1rem;
-     }
-
-     .image-container {
-         margin-left: 5%;
-     }
-
-     .button1 {
-         margin-left: -32%;
-         height     : 3rem;
-         width      : 13rem;
-     }
-
-     .text1 {
-         font-size   : 1rem;
-         padding-left: 27%;
-         width       : 105vw;
-     }
-
-     .image2 {
-         width      : 59%;
-         margin-left: -13em;
-         margin-top : 17%;
-     }
-
-     .image3 {
-         width       : 55%;
-         margin-right: 3em;
-         right       : 0;
-         height      : 48%;
-     }
-
-     .arrow {
-         left      : 28%;
-         margin-top: 15%;
-     }
-
-     /* footer */
-     .footer {
-         height: 31vh;
-         width : 105vw;
-     }
-
-     .connect {
-         margin-bottom: 1.5%;
-     }
-
-     .footer-column {
-         grid-column-end: 4;
-     }
-
-     .appops-logo {
-         height     : 3vh;
-         margin-top : -1%;
-         margin-left: 81%;
-     }
-
-
-     .logo {
-         height: 2vh;
+         height: 1.2vh;
          width : 7vw;
      }
 
@@ -1166,27 +1058,152 @@
      }
 
      .icons {
-         margin-left: 11em;
+         margin-left: 21em;
      }
  }
 
- /* iPad Pro (10.5")  Landscape*/
- @media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) {
+
+ @media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) {
      html {
-         font-size: 1.5vw;
+         font-size: 1.3vw;
      }
 
-     .text-with-image {
-         height: 44vh;
+     .top-left .about {
+         font-size: 2.5vh;
+     }
+
+     .about,
+     .contact {
+         font-size: 2.5vh;
+     }
+
+     .icons {
+         margin-left: -2em;
+     }
+
+     .container {
+         width: 100%;
+     }
+
+     .system {
+         font-size: 1.3rem;
+     }
+
+     .left-grid-col {
+         grid-column-start: 4;
+         grid-column-end  : 23;
+     }
+
+     .right-grid-col {
+         grid-column-start: 23;
+         grid-column-end  : 47;
+     }
+
+     .right-grid-image {
+         width      : 55%;
+         margin-top : -4%;
+         margin-left: -5%;
      }
 
      .text-item {
          font-size  : 1rem;
-         line-height: 45px;
+         line-height: 2em;
      }
 
      .image-container {
          margin-left: 5%;
+     }
+
+     .button1 {
+         margin-left: -38%;
+         height     : 3rem;
+         width      : 13rem;
+     }
+
+     .text1 {
+         font-size   : 1rem;
+         padding-left: 27%;
+         width       : 100vw;
+         line-height : 2em;
+     }
+
+     .text1 h2 {
+         font-size: 1.3rem;
+     }
+
+     .image2 {
+         width      : 59%;
+         margin-left: -12em;
+         margin-top : 17%;
+     }
+
+     .image3 {
+         width       : 55%;
+         margin-right: 3em;
+         right       : 0;
+         height      : 43%;
+     }
+
+     .arrow {
+         left      : 28%;
+         margin-top: 15%;
+         font-size : 13vh;
+     }
+
+     /* footer */
+     .footer {
+         height   : 24vh;
+         font-size: 0.7rem;
+     }
+
+     .connect {
+         margin-left  : 85%;
+         padding-top  : 0.5em;
+         margin-bottom: 0.5%;
+     }
+
+     .footer-column {
+         grid-column-end: 4;
+     }
+
+     .appops-logo {
+         height     : 3vh;
+         margin-top : -1%;
+         margin-left: 86%;
+     }
+
+     .logo {
+         height: 1.5vh;
+         width : 7vw;
+     }
+
+     .franchise {
+         margin-left: 39%;
+     }
+
+     .icons {
+         margin-left: 23em;
+     }
+
+     .fa {
+         padding: 5%;
+         height : 4vh;
+         width  : 4vw;
+     }
+ }
+
+ /* iPad Pro (10.5")  Landscape*/
+ @media only screen and (min-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) {
+     html {
+         font-size: 1.5vw;
+     }
+
+     .system {
+         font-size: 1.3rem;
+     }
+
+     .text-item {
+         font-size: 1rem;
      }
 
      .left-grid-col {
@@ -1199,42 +1216,58 @@
          grid-column-end  : 50;
      }
 
-     .button1 {
-         margin-left: -58%;
-     }
-
-     .text1 {
-         font-size   : 1rem;
-         line-height : 45px;
-         padding-left: 24%;
-     }
-
      .right-grid-image {
          width      : 63%;
          margin-top : 0%;
          margin-left: -4%;
      }
 
+     .button1 {
+         margin-left: -58%;
+     }
+
+     .text1 {
+         font-size   : 1rem;
+         padding-left: 24%;
+     }
+
+     .text1 h2 {
+         font-size: 1.3rem;
+     }
+
+     .image-container {
+         margin-left: 5%;
+     }
+
      .image2 {
-         width      : 53%;
-         margin-left: -15em;
-         height     : 43vh;
+         width      : 59%;
+         margin-left: -11em;
+         margin-top : 17%;
      }
 
      .image3 {
-         height: 42vh;
-         width : 53%;
+         width       : 55%;
+         margin-right: 3em;
+         right       : 0;
+         height      : 43%;
+     }
+
+     .arrow {
+         left      : 28%;
+         margin-top: 15%;
+         font-size : 15vh;
      }
 
      /* footer */
      .footer {
-         height: 22vh;
-         width : 100vw;
-
+         height   : 14vh;
+         font-size: 0.7rem;
      }
 
      .connect {
-         margin-bottom: 1.5%;
+         margin-left  : 85%;
+         padding-top  : 0.5em;
+         margin-bottom: 0.5%;
      }
 
      .footer-column {
@@ -1243,44 +1276,75 @@
 
      .appops-logo {
          height     : 3vh;
-         margin-top : -2%;
-         margin-left: 80%;
+         margin-top : -1%;
+         margin-left: 86%;
      }
 
-
      .logo {
-         height: 2vh;
+         height: 1.5vh;
          width : 7vw;
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 29%;
      }
 
      .icons {
-         margin-left: 5em;
+         margin-left: 26em;
+     }
+
+     .fa {
+         padding: 7%;
+         height : 5vh;
+         width  : 4vw;
      }
  }
 
  /* iPad Pro (10.5")  Portrait*/
- @media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) {
+ @media only screen and (min-width: 834px) and (max-device-width: 834px) and (orientation: portrait) {
      html {
          font-size: 1.5vw;
      }
 
-     .text-item {
-         font-size  : 1.3rem;
-         line-height: 45px;
+     /* navbar */
+     .top-left {
+         font-size: 3vh;
+     }
+
+     .about,
+     .contact {
+         font-size: 2.5vh;
+     }
+
+     /* navbar end */
+
+     .text-with-image {
+         padding       : 9rem 0;
+         padding-bottom: 0%;
+     }
+
+     .system {
+         font-size: 1.8rem;
      }
 
      .left-grid-col {
          grid-column-start: 2;
-         grid-column-end  : 20;
+         grid-column-end  : 25;
      }
 
      .right-grid-col {
-         grid-column-start: 20;
-         grid-column-end  : 50;
+         grid-column-start: 25;
+         grid-column-end  : 48;
+     }
+
+     .right-grid-image {
+         width      : 75%;
+         margin-top : -4%;
+         margin-left: -26%;
+     }
+
+     .text-item {
+         font-size: 1.3rem;
      }
 
      .image-container {
@@ -1288,7 +1352,7 @@
      }
 
      .button1 {
-         margin-left: -66%;
+         margin-left: -70%;
          font-size  : 1.2rem;
          height     : 3rem;
          width      : 13rem;
@@ -1296,20 +1360,11 @@
 
      .text1 {
          font-size   : 1.3rem;
-         line-height : 45px;
-         padding-left: 10%;
+         padding-left: 15%;
      }
 
-     .right-grid-image {
-         width      : 75%;
-         margin-top : 4%;
-         margin-left: -20%;
-     }
-
-     .text-with-image {
-         height        : 43vh;
-         padding       : 9rem 0;
-         padding-bottom: 0%;
+     .text1 h2 {
+         font-size: 1.8rem;
      }
 
      .image2 {
@@ -1324,18 +1379,18 @@
      }
 
      .arrow {
-         font-size: 12vh;
+         font-size: 10vh;
          left     : 26%;
      }
 
      /* footer */
      .footer {
-         height: 29vh;
-         width : 100vw;
+         height: 34vh;
      }
 
      .connect {
-         margin-bottom: 1.5%;
+         /* margin-bottom: 1.5%; */
+         margin-left: 77%;
      }
 
      .footer-column {
@@ -1348,69 +1403,87 @@
          margin-left: 80%;
      }
 
-
      .logo {
-         height: 1.5vh;
+         height: 1.2vh;
          width : 7vw;
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 32%;
      }
 
      .icons {
-         margin-left: 6em;
+         margin-left: 11em;
+     }
+
+     .fa {
+         padding: 7%;
+         height : 4vh;
+         width  : 6vw;
      }
  }
 
- @media only screen and (min-device-width: 1191px) and (max-device-width: 1191px) and (orientation: landscape) {
+ @media only screen and (min-width: 1191px) and (max-device-width: 1191px) and (orientation: landscape) {
      html {
          font-size: 1.5vw;
      }
 
-     .text-with-image {
-         height: 44vh;
+     /* navbar */
+     .top-left {
+         font-size: 4.3vh;
+     }
+
+     .about,
+     .contact {
+         font-size: 3.4vh;
+     }
+
+     /* navbar end */
+     .system {
+         font-size: 1.3rem;
      }
 
      .text-item {
-         font-size  : 1rem;
-         line-height: 45px;
+         font-size: 1rem;
+     }
+
+     .left-grid-col {
+         grid-column-start: 3;
+         grid-column-end  : 21;
+     }
+
+     .right-grid-col {
+         grid-column-start: 21;
+         grid-column-end  : 48;
+     }
+
+     .right-grid-image {
+         width      : 60%;
+         margin-top : -4%;
+         margin-left: -6%;
+     }
+
+     .button1 {
+         margin-left: -60%;
+     }
+
+     .text1 {
+         font-size   : 1rem;
+         padding-left: 24%;
+     }
+
+     .text1 h2 {
+         font-size: 1.3rem;
      }
 
      .image-container {
          margin-left: 5%;
      }
 
-     .left-grid-col {
-         grid-column-start: 4;
-         grid-column-end  : 19;
-     }
-
-     .right-grid-col {
-         grid-column-start: 19;
-         grid-column-end  : 50;
-     }
-
-     .button1 {
-         margin-left: -58%;
-     }
-
-     .text1 {
-         font-size   : 1rem;
-         line-height : 45px;
-         padding-left: 24%;
-     }
-
-     .right-grid-image {
-         width      : 63%;
-         margin-top : 0%;
-         margin-left: -4%;
-     }
-
      .image2 {
          width      : 53%;
-         margin-left: -15em;
-         height     : 43vh;
+         margin-left: -9em;
+         height     : 43vh
      }
 
      .image3 {
@@ -1418,15 +1491,19 @@
          width : 53%;
      }
 
+     .arrow {
+         font-size: 13vh;
+         left     : 32%;
+     }
+
      /* footer */
      .footer {
-         height: 22vh;
-         width : 100vw;
-
+         height   : 15vh;
+         font-size: 0.7em;
      }
 
      .connect {
-         margin-bottom: 1.5%;
+         margin-left: 81%;
      }
 
      .footer-column {
@@ -1435,10 +1512,15 @@
 
      .appops-logo {
          height     : 3vh;
-         margin-top : -2%;
-         margin-left: 80%;
+         margin-top : -0.8%;
+         margin-left: 82%;
      }
 
+     .fa {
+         height : 6vh;
+         width  : 5vw;
+         padding: 7%;
+     }
 
      .logo {
          height: 2vh;
@@ -1446,40 +1528,53 @@
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 38%;
      }
 
      .icons {
-         margin-left: 5em;
+         margin-left: 14em;
      }
  }
 
- @media only screen and (min-device-width: 1194px) and (max-device-width: 1194px) and (orientation: landscape) {
+ @media only screen and (min-width: 1194px) and (max-device-width: 1194px) and (orientation: landscape) {
      html {
          font-size: 1.5vw;
      }
 
-     .text-with-image {
-         height: 44vh;
+     /* navbar */
+     .top-left {
+         font-size: 4.3vh;
      }
 
-     .text-item {
-         font-size  : 1rem;
-         line-height: 45px;
+     .about,
+     .contact {
+         font-size: 3.4vh;
      }
 
-     .image-container {
-         margin-left: 5%;
+     /* navbar end */
+
+     .system {
+         font-size: 1.3rem;
      }
 
      .left-grid-col {
          grid-column-start: 4;
-         grid-column-end  : 19;
+         grid-column-end  : 24;
      }
 
      .right-grid-col {
-         grid-column-start: 19;
-         grid-column-end  : 50;
+         grid-column-start: 24;
+         grid-column-end  : 48;
+     }
+
+     .right-grid-image {
+         width      : 60%;
+         margin-top : -3%;
+         margin-left: -14%;
+     }
+
+     .text-item {
+         font-size: 1rem;
      }
 
      .button1 {
@@ -1488,127 +1583,40 @@
 
      .text1 {
          font-size   : 1rem;
-         line-height : 45px;
          padding-left: 24%;
      }
 
-     .right-grid-image {
-         width      : 63%;
-         margin-top : 0%;
-         margin-left: -4%;
-     }
-
-     .image2 {
-         width      : 53%;
-         margin-left: -15em;
-         height     : 43vh;
-     }
-
-     .image3 {
-         height: 42vh;
-         width : 53%;
-     }
-
-     /* footer */
-     .footer {
-         height: 22vh;
-         width : 100vw;
-
-     }
-
-     .connect {
-         margin-bottom: 1.5%;
-     }
-
-     .footer-column {
-         grid-column-end: 4;
-     }
-
-     .appops-logo {
-         height     : 3vh;
-         margin-top : -2%;
-         margin-left: 80%;
-     }
-
-
-     .logo {
-         height: 2vh;
-         width : 7vw;
-     }
-
-     .franchise {
-         margin-left: 31%;
-     }
-
-     .icons {
-         margin-left: 5em;
-     }
- }
-
- @media only screen and (min-device-width: 1075px) and (max-device-width: 1075px) and (orientation: landscape) {
-     html {
-         font-size: 1.5vw;
-     }
-
-     .text-with-image {
-         height: 44vh;
-     }
-
-     .text-item {
-         font-size  : 1rem;
-         line-height: 45px;
+     .text1 h2 {
+         font-size: 1.3rem;
      }
 
      .image-container {
          margin-left: 5%;
      }
 
-     .left-grid-col {
-         grid-column-start: 4;
-         grid-column-end  : 19;
-     }
-
-     .right-grid-col {
-         grid-column-start: 19;
-         grid-column-end  : 50;
-     }
-
-     .button1 {
-         margin-left: -58%;
-     }
-
-     .text1 {
-         font-size   : 1rem;
-         line-height : 45px;
-         padding-left: 24%;
-     }
-
-     .right-grid-image {
-         width      : 63%;
-         margin-top : 0%;
-         margin-left: -4%;
-     }
-
      .image2 {
          width      : 53%;
-         margin-left: -15em;
+         margin-left: -11em;
          height     : 43vh;
      }
 
      .image3 {
-         height: 42vh;
+         height: 43vh;
          width : 53%;
+     }
+
+     .arrow {
+         font-size: 15vh;
      }
 
      /* footer */
      .footer {
-         height: 22vh;
-         width : 100vw;
-
+         height   : 15vh;
+         font-size: 0.7em;
      }
 
      .connect {
-         margin-bottom: 1.5%;
+         margin-left: 81%;
      }
 
      .footer-column {
@@ -1617,10 +1625,15 @@
 
      .appops-logo {
          height     : 3vh;
-         margin-top : -2%;
-         margin-left: 80%;
+         margin-top : -0.8%;
+         margin-left: 82%;
      }
 
+     .fa {
+         height : 6vh;
+         width  : 5vw;
+         padding: 6%;
+     }
 
      .logo {
          height: 2vh;
@@ -1628,11 +1641,112 @@
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 38%;
      }
 
      .icons {
-         margin-left: 5em;
+         margin-left: 14em;
+     }
+ }
+
+ @media only screen and (min-width: 1075px) and (max-device-width: 1075px) and (orientation: landscape) {
+     html {
+         font-size: 1.6vw;
+     }
+
+     .system {
+         font-size: 1.3rem;
+     }
+
+     .left-grid-col {
+         grid-column-start: 3;
+         grid-column-end  : 22;
+     }
+
+     .right-grid-col {
+         grid-column-start: 22;
+         grid-column-end  : 48;
+     }
+
+     .right-grid-image {
+         width      : 63%;
+         margin-top : -3%;
+         margin-left: -10%;
+     }
+
+     .text-item {
+         font-size: 1rem;
+     }
+
+     .button1 {
+         margin-left: -74%;
+     }
+
+     .text1 {
+         font-size   : 1rem;
+         padding-left: 24%;
+     }
+
+     .text1 h2 {
+         font-size: 1.3rem;
+     }
+
+     .image-container {
+         margin-left: 5%;
+     }
+
+     .image2 {
+         width      : 53%;
+         margin-left: -11em;
+         height     : 43vh;
+     }
+
+     .image3 {
+         height: 42vh;
+         width : 53%;
+     }
+
+     .arrow {
+         font-size: 15vh;
+     }
+
+     /* footer */
+     .footer {
+         height   : 15vh;
+         font-size: 0.7em;
+     }
+
+     .connect {
+         margin-left: 82%;
+     }
+
+     .footer-column {
+         grid-column-end: 4;
+     }
+
+     .appops-logo {
+         height     : 3vh;
+         margin-top : -0.8%;
+         margin-left: 83%;
+     }
+
+     .fa {
+         height : 6vh;
+         width  : 5vw;
+         padding: 7%;
+     }
+
+     .logo {
+         height: 2vh;
+         width : 7vw;
+     }
+
+     .franchise {
+         margin-left: 36%;
+     }
+
+     .icons {
+         margin-left: 14em;
      }
  }
 
@@ -1643,6 +1757,8 @@
          font-size: 1.5vw;
      }
 
+     /* navbar */
+
      .top-left {
          font-size: 1.8rem;
      }
@@ -1652,8 +1768,10 @@
          font-size: 1.6rem;
      }
 
-     .text-with-image {
-         height: 44vh;
+     /* navbar end */
+
+     .system {
+         font-size: 1.3rem;
      }
 
      .left-grid-col {
@@ -1667,8 +1785,7 @@
      }
 
      .text-item {
-         font-size  : 1rem;
-         line-height: 45px;
+         font-size: 1rem;
      }
 
      .image-container {
@@ -1681,13 +1798,16 @@
 
      .text1 {
          font-size   : 1rem;
-         line-height : 45px;
          padding-left: 24%;
+     }
+
+     .text1 h2 {
+         font-size: 1.3rem;
      }
 
      .right-grid-image {
          width      : 63%;
-         margin-top : 0%;
+         margin-top : -5%;
          margin-left: -4%;
      }
 
@@ -1709,13 +1829,12 @@
 
      /* footer */
      .footer {
-         height: 22vh;
-         width : 100vw;
-
+         height   : 15vh;
+         font-size: 0.7em;
      }
 
      .connect {
-         margin-bottom: 1.5%;
+         margin-left: 82%;
      }
 
      .footer-column {
@@ -1724,10 +1843,15 @@
 
      .appops-logo {
          height     : 3vh;
-         margin-top : -2%;
-         margin-left: 80%;
+         margin-top : -0.8%;
+         margin-left: 83%;
      }
 
+     .fa {
+         height : 6vh;
+         width  : 5vw;
+         padding: 7%;
+     }
 
      .logo {
          height: 2vh;
@@ -1735,18 +1859,25 @@
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 36%;
      }
 
      .icons {
-         margin-left: 6em;
+         margin-left: 16em;
      }
  }
 
  /* iPad Air  Portrait*/
- @media only screen and (min-device-width: 820px) and (max-device-width: 820px) and (orientation: portrait) {
+ @media only screen and (min-width: 820px) and (max-device-width: 820px) and (orientation: portrait) {
+
      html {
-         font-size: 1.5vw;
+         font-size: 1.8vw;
+     }
+
+     /* navbar */
+
+     .container {
+         width: 100%;
      }
 
      .top-left .about {
@@ -1799,76 +1930,94 @@
          color: white;
      }
 
-     .about,
+     .about {
+         margin-left   : 2%;
+         /* line-height: 190%; */
+         font-size     : 2.5vh;
+     }
+
      .contact {
          margin-left: 2%;
-         font-size  : 2.2vh;
+         font-size  : 2.5vh;
+     }
+
+     /* navbar end */
+
+     .button1 {
+         height     : 3rem;
+         width      : 15rem;
+         margin-left: -3%;
+         font-weight: bold;
      }
 
      .text-with-image {
-         height        : 34vh;
-         padding       : 9rem 0;
-         padding-bottom: 1%;
+         margin-bottom: 10%;
+         margin-left  : 9%;
+         padding-top  : 14%;
      }
 
-     .text-item {
-         font-size  : 1.3rem;
-         line-height: 45px;
+     .system {
+         margin-top : 10%;
+         font-size  : 1.7em;
+         font-weight: 200;
+         font-weight: bold;
      }
 
      .left-grid-col {
-         grid-column-start: 3;
-         grid-column-end  : 18;
+         grid-column-start: 1;
+         grid-column-end  : 23;
      }
 
-     .image-container {
-         margin-left: 5%;
+     .right-grid-col {
+         grid-column-start: 23;
+         grid-column-end  : 48;
      }
 
-     .button1 {
-         margin-bottom: -1vh;
-         font-size    : 1.2rem;
-         height       : 3rem;
-         width        : 13rem;
-         margin-left  : -76%;
+     .text-item {
+         font-weight: 200;
+         font-size  : 1.2rem;
      }
 
      .text1 {
-         font-size   : 0.9rem;
-         line-height : 45px;
-         padding-left: 17%;
+         padding-left: 19%;
+         font-size   : 1.2rem;
      }
 
      .right-grid-image {
-         width      : 75%;
-         margin-top : 4%;
-         margin-left: -13%;
+         margin-left: -25%;
+         width      : 73%;
+         margin-top : 2%;
      }
 
      .image2 {
-         height     : 26vh;
-         width      : 55vw;
-         margin-left: -14em;
+         height     : 28vh;
+         margin-left: -6em;
      }
 
      .image3 {
-         height: 26vh;
-         width : 55vw;
+         height: 28vh;
      }
 
      .arrow {
-         font-size: 11vh;
-         left     : 26%;
+         font-size: 8vh;
+     }
+
+     .image-container {
+         margin-bottom: 7%;
+     }
+
+     .request-button {
+         margin-left  : 40%;
+         margin-bottom: 2%;
      }
 
      /* footer */
      .footer {
-         height: 35vh;
-         width : 100vw;
+         height: 34vh;
      }
 
      .connect {
-         margin-bottom: 1.5%;
+         margin-left: 78%;
      }
 
      .footer-column {
@@ -1877,10 +2026,14 @@
 
      .appops-logo {
          height     : 3vh;
-         margin-top : -1%;
          margin-left: 80%;
      }
 
+     .fa {
+         height : 4vh;
+         width  : 6vw;
+         padding: 5%;
+     }
 
      .logo {
          height: 1.5vh;
@@ -1888,28 +2041,24 @@
      }
 
      .franchise {
-         margin-left: 32%;
+         margin-left: 34%;
      }
 
      .icons {
-         margin-left: 5em;
+         margin-left: 4em
      }
  }
 
 
- @media only screen and (min-device-width: 1200px) and (max-device-width: 1200px) {
+ @media only screen and (min-width: 1200px) and (max-device-width: 1200px) {
      html {
          font-size: 1.2vw;
      }
 
      .text-item {
-         font-size  : 1rem;
-         line-height: 45px;
+         font-size: 1rem;
      }
 
-     .image-container {
-         margin-left: 5%;
-     }
 
      .button1 {
          margin-left: -3%;
@@ -1917,7 +2066,6 @@
 
      .text1 {
          font-size   : 1rem;
-         line-height : 45px;
          padding-left: 24%;
      }
 
@@ -1927,8 +2075,8 @@
          margin-left: -4%;
      }
 
-     .text-with-image {
-         height: 45vh;
+     .image-container {
+         margin-left: 5%;
      }
 
      .image2 {
@@ -1936,7 +2084,6 @@
          margin-left: -14em;
          height     : 60vh;
      }
-
 
      .image3 {
          height: 60vh;
@@ -1946,8 +2093,6 @@
      /* footer */
      .footer {
          height: 24vh;
-         width : 99vw;
-
      }
 
      .connect {
@@ -1964,7 +2109,6 @@
          margin-left: 80%;
      }
 
-
      .logo {
          height: 2vh;
          width : 7vw;
@@ -1980,14 +2124,14 @@
  }
 
 
- @media only screen and (min-device-width: 1600px) and (max-device-width: 1600px) {
+ @media only screen and (min-width: 1600px) and (max-device-width: 1600px) {
      html {
          font-size: 1.2vw;
      }
 
      .text-item {
-         font-size  : 1rem;
-         line-height: 45px;
+         font-size     : 1rem;
+         /* line-height: 45px; */
      }
 
      .image-container {
@@ -1999,9 +2143,9 @@
      }
 
      .text1 {
-         font-size   : 1rem;
-         line-height : 45px;
-         padding-left: 24%;
+         font-size      : 1rem;
+         /* line-height : 45px; */
+         padding-left   : 24%;
      }
 
      .right-grid-image {
@@ -2063,14 +2207,14 @@
  }
 
  /* for large desktop */
- @media only screen and (min-device-width: 1920px) {
+ @media only screen and (min-width: 1920px) {
      html {
          font-size: 1.2vw;
      }
 
      .text-item {
-         font-size  : 1rem;
-         line-height: 45px;
+         font-size     : 1rem;
+         /* line-height: 45px; */
      }
 
      .image-container {
@@ -2082,9 +2226,9 @@
      }
 
      .text1 {
-         font-size   : 1rem;
-         line-height : 45px;
-         padding-left: 24%;
+         font-size      : 1rem;
+         /* line-height : 45px; */
+         padding-left   : 24%;
      }
 
      .right-grid-image {
@@ -2113,7 +2257,6 @@
      .footer {
          height: 24vh;
          width : 99vw;
-
      }
 
      .connect {
