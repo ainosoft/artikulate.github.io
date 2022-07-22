@@ -100,22 +100,19 @@
 
 
  .button {
-     margin-top                : 40vh;
-     margin-left               : -27vh;
-     margin-bottom             : 11vh;
-     /* margin-top             : 46vh;
-     margin-left               : -30vh;
-     margin-bottom             : 15vh; */
-     height                    : 2.5rem;
-     width                     : 12rem;
-     font-size                 : 1rem;
-     background                : #28bbbb;
-     color                     : white;
-     -webkit-text-decoration   : none;
-     text-decoration           : none;
-     border-radius             : 17px;
-     font-weight               : bold;
-     cursor                    : pointer;
+     margin-top             : 40vh;
+     margin-left            : -27vh;
+     margin-bottom          : 11vh;
+     height                 : 2.5rem;
+     width                  : 12rem;
+     font-size              : 1rem;
+     background             : #28bbbb;
+     color                  : white;
+     -webkit-text-decoration: none;
+     text-decoration        : none;
+     border-radius          : 17px;
+     font-weight            : bold;
+     cursor                 : pointer;
  }
 
 
@@ -675,7 +672,6 @@
      }
 
      .connect {
-         /* margin-bottom: 3%; */
          margin-left: 73%;
      }
 
@@ -684,8 +680,6 @@
      }
 
      .appops-logo {
-         /* height     : 2vh;
-         margin-top : 0%; */
          margin-left: 69%;
      }
 
@@ -971,7 +965,6 @@
 
 
  /** Responsiveness for iPad (portrait)*/
- /* @media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) { */
  @media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) {
      html {
          font-size: 1.8vw;
@@ -1355,10 +1348,6 @@
          font-size: 0.7rem;
      }
 
-     /* .connect {
-         margin-bottom: 1.5%;
-     } */
-
      .footer-column {
          grid-column-end: 4;
      }
@@ -1642,11 +1631,11 @@
      }
 
      .franchise {
-         margin-left: 32%;
+         margin-left: 37%;
      }
 
      .icons {
-         margin-left: 11em;
+         margin-left: 7em;
      }
 
      .fa {
@@ -1772,7 +1761,7 @@
      .appops-logo {
          height     : 3vh;
          margin-top : -0.8%;
-         margin-left: 81%;
+         margin-left: 82%;
      }
 
      .fa {
@@ -2563,7 +2552,6 @@
      }
  }
 
- /* @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) { */
  @media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) {
      html {
          font-size: 1.3vw;
@@ -2573,8 +2561,8 @@
          width: 100%;
      }
 
-     .top-left .about {
-         font-size: 2.5vh;
+     .top-left {
+         font-size: 3.5vh;
      }
 
      .about,
