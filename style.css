@@ -482,7 +482,7 @@
 
      .top-left.responsive .icon {
          position: absolute;
-         right   : 20%;
+         right   : 0%;
          top     : 11%;
      }
 
@@ -671,7 +671,6 @@
      /* footer */
      .footer {
          height   : 5.8rem;
-         width    : 100vw;
          font-size: 0.5rem;
      }
 
@@ -1405,44 +1404,37 @@
          margin-top: 40vh;
      }
 
-     .button2 {
-         margin-top : 21em;
-         margin-left: -10em;
-     }
-
      .text2 {
          padding-left: 19%;
      }
 
-     .left-grid2-col {
-         grid-column-start: 5;
-         grid-column-end  : 18;
+     .right-grid2-image {
+         width      : 55%;
+         margin-top : -3%;
+         margin-left: -6%;
      }
 
-     .right-grid2-col {
-         grid-column-start: 18;
-         grid-column-end  : 40;
-     }
-
-     .left-grid3-col {
-         grid-column-start: 3;
-         grid-column-end  : 14;
+     .button2 {
+         margin-top : 20em;
+         margin-left: -10em;
      }
 
      .right-grid3-col {
-         grid-column-start: 15;
-         grid-column-end  : 29;
+         grid-column-start: 17;
+         grid-column-end  : 30;
+     }
+
+     .left-grid3-col {
+         grid-column-start: 2;
+     }
+
+     .left-grid3-image {
+         width: 90%;
      }
 
      /* footer */
      .footer {
-         height: 20vh;
-         width : 100vw;
-
-     }
-
-     .connect {
-         margin-bottom: 1.5%;
+         height: 16vh;
      }
 
      .footer-column {
@@ -1451,10 +1443,9 @@
 
      .appops-logo {
          height     : 3vh;
+         margin-left: 82%;
          margin-top : -2%;
-         margin-left: 79%;
      }
-
 
      .logo {
          height: 2vh;
@@ -1462,16 +1453,15 @@
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 33%;
      }
 
      .icons {
-         margin-left: 5em;
+         margin-left: 15em;
      }
  }
 
  /* iPad Pro (10.5")  Portrait*/
- /* @media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) { */
  @media only screen and (min-width: 834px) and (max-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
      html {
          font-size: 1.5vw;
@@ -1633,7 +1623,6 @@
      }
 
      .connect {
-         /* margin-bottom: 1.5%; */
          margin-left: 77%;
      }
 
@@ -1787,8 +1776,9 @@
      }
 
      .fa {
-         height: 6vh;
-         width : 5vw;
+         height : 6vh;
+         width  : 5vw;
+         padding: 7%;
      }
 
      .logo {
@@ -1924,12 +1914,13 @@
      .appops-logo {
          height     : 3vh;
          margin-top : -0.8%;
-         margin-left: 81%;
+         margin-left: 82%;
      }
 
      .fa {
-         height: 6vh;
-         width : 5vw;
+         height : 6vh;
+         width  : 5vw;
+         padding: 6%;
      }
 
      .logo {
@@ -2063,8 +2054,9 @@
      }
 
      .fa {
-         height: 6vh;
-         width : 5vw;
+         height : 6vh;
+         width  : 5vw;
+         padding: 7%;
      }
 
      .logo {
@@ -2210,12 +2202,13 @@
      }
 
      .fa {
-         height: 3.5vh;
-         width : 5vw;
+         height : 3.5vh;
+         width  : 5vw;
+         padding: 7%;
      }
 
      .logo {
-         height: 1.5vh;
+         height: 1.3vh;
          width : 7vw;
      }
 
@@ -2304,7 +2297,7 @@
      }
 
      .text1 {
-         font-size: 0.8rem;
+         font-size: 1.3rem;
      }
 
      .text-item {
@@ -2312,7 +2305,7 @@
      }
 
      .text-item1 {
-         font-size: 0.8rem;
+         font-size: 1.3rem;
      }
 
      .text-item2 {
@@ -2320,7 +2313,7 @@
      }
 
      .text-item3 {
-         font-size: 0.8rem;
+         font-size: 1.3rem;
      }
 
      .button {
@@ -2339,16 +2332,17 @@
      }
 
      .left-grid1-col {
-         grid-column-end: 15;
+         grid-column-start: 3;
+         grid-column-end  : 13;
      }
 
      .right-grid1-col {
-         grid-column-start: 15;
-         grid-column-end  : 27;
+         grid-column-start: 13;
+         grid-column-end  : 24;
      }
 
      .left-grid1-image {
-         width: 156%;
+         width: 145%;
      }
 
      .button1 {
@@ -2372,7 +2366,7 @@
      }
 
      .text2 {
-         font-size   : 0.8rem;
+         font-size   : 1.3rem;
          padding-left: 11%;
      }
 
@@ -2392,23 +2386,24 @@
      }
 
      .left-grid3-col {
-         grid-column-start: 3;
-         grid-column-end  : 15;
+         grid-column-start: 2;
+         grid-column-end  : 14;
      }
 
      .right-grid3-col {
-         grid-column-start: 17;
-         grid-column-end  : 28;
+         grid-column-start: 14;
+         grid-column-end  : 24;
+         margin-left      : 6%;
      }
 
      .left-grid3-image {
-         margin-left: -8%;
-         width      : 116%;
+         margin-left: -1%;
+         width      : 100%;
      }
 
      /* footer */
      .footer {
-         height: 35vh;
+         height: 34vh;
          width : 100vw;
      }
 
@@ -2426,18 +2421,23 @@
          margin-left: 80%;
      }
 
+     .fa {
+         padding: 8%;
+         height : 4vh;
+         width  : 5vw;
+     }
 
      .logo {
-         height: 1.5vh;
+         height: 1.3vh;
          width : 7vw;
      }
 
      .franchise {
-         margin-left: 31%;
+         margin-left: 33%;
      }
 
      .icons {
-         margin-left: 5em;
+         margin-left: 13em;
      }
  }
 
@@ -2508,8 +2508,19 @@
          padding-left: 18%;
      }
 
+     .right-grid2-image {
+         width      : 55%;
+         margin-top : -3%;
+         margin-left: -6%;
+     }
+
+     .button2 {
+         margin-top : 20em;
+         margin-left: -10em;
+     }
+
      .right-grid3-col {
-         grid-column-start: 16;
+         grid-column-start: 17;
          grid-column-end  : 30;
      }
 
@@ -2521,19 +2532,11 @@
          width: 90%;
      }
 
-     .button2 {
-         margin-top : 20em;
-         margin-left: -10em;
-     }
+
 
      /* footer */
      .footer {
-         height: 21vh;
-         width : 100vw;
-     }
-
-     .connect {
-         margin-bottom: 1.5%;
+         height: 16vh;
      }
 
      .footer-column {
@@ -2542,10 +2545,9 @@
 
      .appops-logo {
          height     : 3vh;
+         margin-left: 82%;
          margin-top : -2%;
-         margin-left: 81%;
      }
-
 
      .logo {
          height: 2vh;
@@ -2553,11 +2555,11 @@
      }
 
      .franchise {
-         margin-left: 29%;
+         margin-left: 33%;
      }
 
      .icons {
-         margin-left: 8em;
+         margin-left: 15em;
      }
  }
 
