@@ -2,407 +2,235 @@
 <html>
 
 <head>
-    <link rel="icon" href="./assets/a-icon.png">
-    <!-- Calendly badge widget begin -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script
-        type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/dpadhy/30min', text: 'Schedule a call', color: '#1A1A1A', textColor: '#FFFFFF', branding: true }); }</script>
-    <!-- Calendly badge widget end -->
-    <!--Start of Zendesk Chat Script-->
-    <script type="text/javascript">
-        window.$zopim || (function (d, s) {
-            var z = $zopim = function (c) {
-                z._.push(c)
-            },
-                $ = z.s = d.createElement(s),
-                e = d.getElementsByTagName(s)[0];
-            z.set = function (o) {
-                z.set._.push(o)
-            };
-            z._ = [];
-            z.set._ = [];
-            $.async = !0;
-            $.setAttribute("charset", "utf-8");
-            $.src = "https://v2.zopim.com/?4nGgkcgcwXT1xaX652O6enjzDtn1NxK8";
-            z.t = +new Date;
-            $.type = "text/javascript";
-            e.parentNode.insertBefore($, e)
-        })(document, "script");
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PB843TB');
     </script>
-    <!--End of Zendesk Chat Script-->
+    <!-- End Google Tag Manager -->
 
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
+    <!--start meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- End meta tag-->
 
-        body {
-            margin: 0;
-            font-family: sans-serif, "Roboto", "Helvetica Neue";
-        }
-
-        /** AI driver header bar */
-        .header {
-            padding: 3%;
-            font-size: 5vh;
-            text-align: center;
-            color: #3b783a;
-            word-spacing: 3px;
-        }
-
-        /** Artikulate.io header bar */
-        .artikulate-logo-bar {
-            width: 100%;
-        }
-
-        .ark-logo {
-            background: #3b783a;
-            color: white;
-            width: 69.5%;
-            height: 23vh;
-            float: left;
-
-        }
-
-        .ark-logo-text {
-            text-align: center;
-            margin-top: 4%;
-            font-size: 10vh;
-            font-family: 'Comfortaa';
-        }
-
-        .ark-text-container {
-            height: 23vh;
-            background: #e4e4e4;
-            color: #3b783a;
-            width: 30%;
-            float: right;
-
-        }
-
-        .ark-text-div {
-            padding: 9%;
-
-        }
-
-        .ark-text-div p {
-            text-align: center;
-            margin: 3px;
-            /* font-size: 22px; */
-            font-size: 3vh;
-        }
-
-        /** Image container css */
-        .img-container {
-            margin-top: 19%;
-        }
-
-        .image1 {
-            width: 55%;
-            margin-top: 12%;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-        }
-
-        .image2 {
-            width: 55%;
-            right: 0;
-            position: absolute;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-        }
-
-        .arrow {
-            font-size: 15vh;
-            color: red;
-            top: 94%;
-            left: 42%;
-            position: absolute;
-        }
-
-        /** Image container css ends */
-
-        .checklist-container {
-            background: #e4e4e4;
-            margin-top: 5%;
-        }
-
-        .checklist {
-            padding: 5%;
-        }
-
-        .checklist li {
-            color: #3b783a;
-            font-weight: 600;
-            font-size: 2vh;
-        }
-
-        li {
-            position: relative;
-            /* necessary for positioning the :after */
-        }
-
-        li.done {
-            list-style: none;
-            /* remove normal bullet for done items */
-        }
-
-        li.done:after {
-            content: "";
-            background-color: transparent;
-
-            /* position the checkbox */
-            position: absolute;
-            left: -16px;
-            top: 0px;
-
-            /* setting the checkbox */
-            /* short arm */
-            width: 5px;
-            border-bottom: 3px solid #4D7C2A;
-            /* long arm */
-            height: 11px;
-            border-right: 3px solid #4D7C2A;
-
-            /* rotate the mirrored L to make it a checkbox */
-            transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-
-        .appops-footer-logo {
-            width: 60px;
-            cursor: pointer;
-        }
-
-        .built-with-appops {
-            right: 47px;
-            position: absolute;
-        }
-
-        /** Calendly css starts */
-        .calendly-badge-widget {
-            position: fixed !important;
-            left: auto !important;
-            top: 0px;
-            right: 195px;
-            z-index: 9998 !important;
-        }
-
-        .calendly-badge-content {
-            border-radius: 5px !important;
-            box-shadow: #ddd 0 -4px 5px;
-            background: #555555 !important;
-            color: #ffffff !important;
-            height: 30px !important;
-            font-size: 12px !important;
-        }
-
-        .calendly-badge-content span {
-            display: none !important;
-        }
-
-        .calendly-overlay {
-            top: 10px;
-        }
-
-        /** Calendly css ends */
-
-        /** Chat widget css begins */
-        .meshim_widget_components_ChatButton.br .button_bar {
-            border: 3px solid #fff !important;
-            color: #000 !important;
-        }
-
-        .zopim {
-            top: 0px !important;
-        }
-
-        .contact-us {
-            text-align: center;
-        }
-
-        .contact-heading {
-            padding: 3%;
-            font-size: 5vh;
-            /* margin-left: 2%; */
-            text-align: center;
-            color: #3b783a;
-            /* word-spacing: 3px; */
-            font-style: oblique;
-            font-weight: bold;
-        }
-
-        /* * Chat widget css ends
-
-        /** Responsiveness for iPhone X*/
-        @media only screen and (min-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
-            .header {
-                padding: 12% 0% 5% 0%;
-            }
-
-            .ark-logo {
-                height: 7vh;
-            }
-
-            .ark-text-container {
-                height: 7vh;
-            }
-
-            .img-container {
-                margin-top: 23%;
-            }
-
-            .arrow {
-                font-size: 500%;
-                top: 27%;
-            }
-
-            .checklist li {
-                font-weight: 600;
-                font-size: medium;
-            }
-
-            .calendly-badge-widget {
-                top: 26px;
-                right: 471px;
-            }
-
-            .calendly-badge-content {
-                transform: scale(2.61);
-            }
-        }
-
-
-
-        /** Responsiveness for iPad*/
-        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:portrait) {
-
-            /* iPad portrait style here */
-            .header {
-                padding: 3%;
-                font-size: 3vh;
-                text-align: center;
-                color: #3b783a;
-                word-spacing: 3px;
-            }
-
-            .ark-logo {
-                height: 12vh;
-            }
-
-            .ark-logo-text {
-                font-size: 6vh;
-            }
-
-            .ark-text-container {
-                height: 12vh;
-
-            }
-
-            .ark-text-div p {
-                font-size: 2vh
-            }
-
-            .img-container {
-                margin-top: 23%;
-            }
-
-            .arrow {
-                font-size: 500%;
-                top: 45%;
-            }
-
-            .image2 {
-                width: 54%;
-                right: 0;
-                position: absolute;
-                box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
-            }
-        }
-
-        /** Responsiveness for iPad pro */
-        /* @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-            .ark-logo {
-                height: 12vh;
-            }
-
-            .ark-text-container {
-                height: 12vh;
-            }
-
-            .img-container {
-                margin-top: 23%;
-            }
-
-            .arrow {
-                font-size: 500%;
-                top: 39%;
-            }
-        } */
-
-        */
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="./artikulate-io-for-sale.html">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MM7WFCJVS8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-MM7WFCJVS8');
     </script>
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--icons -->
 </head>
 
 <body>
-    <h3 class="header">AI driven article extraction platform</h3>
-    <div class="artikulate-logo-bar">
-        <div class="ark-logo">
-            <div class="ark-logo-text">artikulate.io</div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB843TB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container">
+
+        <div class="top-left" id="myTopnav">
+            <a style="text-decoration:none" class="artikulate"> <b>artikulate.io</b></a>
+            <div class="abt-cnt">
+                <a style="text-decoration:none" class="about" href="./about.html">About</a>
+                <a style="text-decoration:none" class="contact"
+                    onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdq7XY2VIiY_jylkdj4ZBsVuMJb1v1IhbriaV03S6xZd7qcug/viewform'">Contact
+                    us</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-        <div class="ark-text-container">
-            <div class="ark-text-div">
-                <p>Bringing</p>
-                <p>Offline News,</p>
-                <p>Online</p>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "top-left") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "top-left";
+                }
+            }
+        </script>
+
+        <div class="text-with-image">
+            <h2 class="large-title">AI driven article extraction platform</h2>
+            <div class="max-width-container ">
+                <div class="grid-row ">
+                    <div class="left-grid-col ">
+
+                        <p class="text-item">
+                            Welcome to Artikulate - an AI driven article extraction platform deployed to fetch, convert,
+                            sort and display newspaper articles from various online sources in a well-formatted,
+                            tabulated and searchable format.
+                            <br><br> Using Machine learning algorithms trained on various online print formats,
+                            artikulate can extract articles with 99.99 percent accuracy at the rate of a million pages
+                            per hour with zero downtime.
+                            <br><br>
+                   
+                            <b> Artikulate.io </b> and underlying Ark platform are products of <b> <a href="https://www.ainosoft.com">AinoSoft.</a></b> 
+                        </p>
+                        
+                        <br>
+                    </div>
+                    <div class="right-grid-col">
+                        <div class="right-grid-img">
+                            <img class="right-grid-image" id="image" src="./assets/Artikulate Introductiov.png" />
+                        </div>
+                    </div><br>
+                    <button class="button"
+                        onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdq7XY2VIiY_jylkdj4ZBsVuMJb1v1IhbriaV03S6xZd7qcug/viewform'">Request
+                        Franchise</button>
+                </div>
+            </div>
+        </div>
+        <div class="span">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="svg">
+                <path d="M-0.27,29.11 C172.96,201.80 277.36,-79.44 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" class="path">
+                </path>
+            </svg>
+        </div>
+
+
+
+        <!-- grid1 -->
+        <div class="text-with-image1">
+            <div class="grid1-row ">
+                <div class="left-grid1-col ">
+                    <div class="left-grid1-img">
+                        <img class="left-grid1-image" src="./assets/artikulate UI Image-01.png" />
+                    </div>
+                </div>
+                <div class="right-grid1-col">
+                    <p class="text-item1">
+                        A simple and intuitive UI, backed by a high performing search, lets you access the most relevant
+                        content by keywords.
+                        <br><br> The dashboard functionality will keep you and your teams updated with the with the
+                        latest stats of publications and edition currently processed along with a historical view till
+                        date.
+                    </p><br>
+                    <button class="button1"
+                        onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdq7XY2VIiY_jylkdj4ZBsVuMJb1v1IhbriaV03S6xZd7qcug/viewform'">Request
+                        Franchise</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="text1">
+            <p>We have invested in and developed proprietary AI technology to capture content from global news sources.
+                We harness the power to process over a million pages per hour coupled with state-of-the-art storage and
+                retrieval mechanisms that present
+                the most relevant information to you as and when it is published.</p>
+        </div>
+        <!-- --- -->
+
+
+        <!-- grid2 -->
+        <div class="text-with-image2">
+            <div class="grid2-row ">
+                <div class="left-grid2-col ">
+                    <p class="text-item2">
+                        In today’s world, companies that are operating in different regions often face the
+                        challenge
+                        that the printed news is not available on a centralized platform.
+                        <br><br> If you’re not monitoring the news and tracking the sentiment of your industry,
+                        you
+                        might miss out on important information.
+                        <br><br> Using artikulate, you can present the most relevant information to your clients
+                        thereby
+                        keeping them abreast with the latest news about their industry.
+                    </p><br>
+                </div>
+                <div class="right-grid2-col">
+                    <div class="right-grid2-img">
+                        <img class="right-grid2-image" src="./assets/global news- artikulate image 3-01.png" />
+                    </div>
+                </div>
+
+                <button class="button2"
+                    onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdq7XY2VIiY_jylkdj4ZBsVuMJb1v1IhbriaV03S6xZd7qcug/viewform'">Request
+                    Franchise</button>
+            </div>
+        </div>
+
+        <div class="text2">
+            <big>With artikulate you have the power to:</big><br><br>
+            <li>Be informed of news articles matching your keywords - the minute they break</li>
+            <li>Understand how you or your clients are being perceived on the global stage</li>
+            <li> Create alerts on your keyword(s) of interest</li>
+        </div>
+        <!-- --- -->
+
+
+        <!-- grid3 -->
+        <div class="text-with-image3">
+            <div class="grid3-row ">
+                <div class="left-grid3-col ">
+                    <div class="left-grid3-img">
+                        <img class="left-grid3-image" src="./assets/Data - artikulate image 4-01.png" />
+                    </div>
+                </div>
+                <div class="right-grid3-col">
+                    <p class="text-item3">
+                        Even experts in your field cannot keep track of everything that’s happening all the time. Our
+                        minds simply cannot consume, sort and retrieve large volumes of information, to identify trends.
+                        <br><br> Artikulate can help media monitoring and PR professionals identify and grasp the
+                        emerging market trends before they go mainstream.
+                    </p><br>
+                    <button class="button3"
+                        onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdq7XY2VIiY_jylkdj4ZBsVuMJb1v1IhbriaV03S6xZd7qcug/viewform'">Request
+                        Franchise</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- -- -->
+
+        <!-- footer -->
+        <div class="footer">
+            <h2 class="connect">Connect</h2>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h1 class="franchise"
+                        onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdq7XY2VIiY_jylkdj4ZBsVuMJb1v1IhbriaV03S6xZd7qcug/viewform'">
+                        Get a Franchise</h1>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/artikulateplatform" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/company/artikulate-io/" class="fa fa-linkedin"></a>
+                        <a href="https://twitter.com/artikulate_io" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="appops-logo">
+                <h2 style="display: inline-block;">Built on</h2> &nbsp;<img class="logo" src="./assets/AppopsLogo.png">
             </div>
         </div>
     </div>
 
-    <div class="img-container">
-        <img class="image2" src="./assets/ArtikulateWebsiteImage2.png" />
-        <img class="image1" src="./assets/ArtikulateWebsiteImage.png" />
-        <span class="arrow">&#10150;</span>
-    </div>
-    <br>
-    <div class="contact-us">
-        <a class="contact-heading" href="./contact-us.html">Contact us for a franchise opportunity</a>
-    </div>
-    <div class="checklist-container">
-        <div class="checklist">
-            <ul>
-                <li class="done">AI driven article extraction platform</li>
-                <br />
-                <li class="done">High performance search index</li>
-                <br />
-                <li class="done">Granular article extraction including title, author and highlights</li>
-                <br />
-                <li class="done">Capability to process 1million PDF pages per hour</li>
-                <br />
-                <li class="done">NewsFeed Availability</li>
-                <br />
-                <li style="list-style-type:none;">and much more ...</li>
-            </ul>
-            <ul class="built-with-appops">
-                <li style="list-style-type:none;color: black; font-weight: 100; font-size: medium;">built with <a
-                        href="https://www.appops.org/" target="_blank"><img class="appops-footer-logo"
-                            src="./assets/AppopsLogo.png" /></a></li>
-            </ul>
-        </div>
-    </div>
+    <!-- -- -->
+
 </body>
 
 </html>
